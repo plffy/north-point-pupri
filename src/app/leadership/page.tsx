@@ -23,7 +23,7 @@ export default function LeadershipPage() {
   return (
     <div className="bg-white">
       {/* Hero Header */}
-      <section className="bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-900 text-white py-16 px-4 sm:px-6 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#0c1a30] via-[#122649] to-[#1a3668] text-white py-16 px-4 sm:px-6 relative overflow-hidden border-t-4 border-amber-400">
         <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex items-center gap-2 text-xs text-amber-400 font-semibold mb-2">
@@ -46,7 +46,7 @@ export default function LeadershipPage() {
       </section>
 
       {/* Leadership Overview Banner */}
-      <section className="py-6 bg-slate-900 text-slate-300 border-b border-slate-800 text-xs sm:text-sm">
+      <section className="py-5 bg-[#081220] text-slate-300 border-b border-amber-500/20 text-xs sm:text-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <LocationMarkerIcon className="w-4 h-4 text-amber-400 shrink-0" />

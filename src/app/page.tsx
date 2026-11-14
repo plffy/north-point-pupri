@@ -34,30 +34,30 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-900 text-white py-14 sm:py-20 lg:py-24 border-b border-indigo-900/40">
-        {/* Subtle background glow */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      {/* Hero Section - Heritage Oxford Navy & Regal Gold */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#0c1a30] via-[#122649] to-[#1a3668] text-white py-14 sm:py-20 lg:py-24 border-t-4 border-amber-400 border-b border-indigo-900/40">
+        {/* Subtle warm educational lighting */}
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center max-w-4xl mx-auto space-y-6">
             {/* Pill Tag with Both Branches */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-amber-300 backdrop-blur-md shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-amber-400/30 text-xs font-semibold text-amber-300 backdrop-blur-md shadow-sm">
               <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-              <span>Admissions Open 2025–26 • Branches: Rajbag (Pupri) &amp; Bahera Zahidpur</span>
+              <span>Admissions Open 2025–26 • Campuses: Rajbag (Pupri) &amp; Bahera Zahidpur</span>
             </div>
 
             {/* Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight sm:leading-tight">
               North Point Children Academy
-              <span className="block text-2xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400 mt-2">
+              <span className="block text-2xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-300 mt-2">
                 English Medium School with Integrated Competitive Coaching
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
               Serving students across our two premier campuses at <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong>. 
               A comprehensive educational sanctuary where regular CBSE schooling is seamlessly synchronized with intensive coaching for{" "}
               <span className="text-amber-300 font-semibold">Navodaya (JNVST), Netarhat, Simultala, Sainik School</span>, and career foundation for{" "}
@@ -795,18 +795,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Leadership & Founders Desk Showcase - 3 Key Leaders */}
-      <section className="py-14 sm:py-20 bg-slate-900 text-white relative overflow-hidden">
+      {/* Leadership & Founders Desk Showcase - Dignified Academic Hall of Honor */}
+      <section className="py-14 sm:py-20 bg-gradient-to-b from-amber-50/40 via-slate-50 to-white text-slate-900 border-y border-amber-200/50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-amber-400">
-              Visionary Leadership
+            <span className="inline-block px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-xs font-bold uppercase tracking-wider">
+              Visionary Leadership &amp; Governance
             </span>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-white mt-1">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">
               Guiding Minds Behind North Point Children Academy
             </h2>
-            <p className="text-xs sm:text-sm text-slate-300 mt-2">
-              Our school is steered by passionate educational leaders committed to providing world-class schooling and competitive entrance success right here in Pupri and Bahera Zahidpur.
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">
+              Our school is steered by dedicated educational leaders committed to providing world-class schooling and competitive entrance success right here in Pupri and Bahera Zahidpur.
             </p>
           </div>
 
@@ -814,82 +814,97 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             {/* Leader 1: Ashok Kumar Thakur - Founder & Chairman */}
-            <div className="bg-gradient-to-b from-indigo-950 via-slate-950 to-slate-900 rounded-2xl p-6 border border-amber-400/30 shadow-xl flex flex-col justify-between group hover:border-amber-400 transition-all">
+            <div className="bg-white rounded-2xl p-6 border-2 border-amber-300 shadow-sm hover:shadow-xl hover:border-amber-400 flex flex-col justify-between transition-all group">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 rounded-2xl bg-amber-400/20 border border-amber-400 flex items-center justify-center text-amber-300 shrink-0">
+                <div className="flex items-center gap-3.5 mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0c1a30] to-[#142850] text-amber-400 border-2 border-amber-400 flex items-center justify-center shrink-0 shadow-md">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-base">Ashok Kumar Thakur</h3>
-                    <p className="text-amber-400 text-xs font-semibold">Founder &amp; Chairman</p>
-                    <span className="text-[10px] text-slate-400">Chairman&apos;s Voice</span>
+                    <h3 className="font-extrabold text-slate-900 text-base group-hover:text-amber-800 transition-colors">
+                      Ashok Kumar Thakur
+                    </h3>
+                    <p className="text-amber-700 text-xs font-bold">Founder &amp; Chairman</p>
+                    <span className="text-[10px] bg-amber-50 text-amber-900 font-semibold px-2 py-0.5 rounded border border-amber-200">
+                      Chairman&apos;s Voice
+                    </span>
                   </div>
                 </div>
-                <p className="text-xs text-slate-300 italic leading-relaxed">
+                <p className="text-xs text-slate-700 italic leading-relaxed bg-amber-50/50 p-3 rounded-xl border border-amber-100">
                   &ldquo;Our pledge is to bring top-tier English-medium schooling, disciplined character building, and residential entrance coaching within reach of every family in Sitamarhi.&rdquo;
                 </p>
               </div>
-              <div className="mt-5 pt-3 border-t border-white/10 flex items-center justify-between text-xs">
-                <span className="text-[11px] text-slate-400">Institutional Vision</span>
-                <Link href="/leadership#chairman" className="text-amber-300 hover:underline font-semibold">
-                  Read Message →
+              <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span className="text-[11px] text-slate-500 font-medium">Institutional Vision</span>
+                <Link href="/leadership#chairman" className="text-amber-800 hover:text-amber-950 font-bold hover:underline flex items-center gap-1">
+                  <span>Read Message</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>
 
             {/* Leader 2: Arvind Ujjwal - Managing Director */}
-            <div className="bg-gradient-to-b from-indigo-950 via-slate-950 to-slate-900 rounded-2xl p-6 border border-indigo-400/30 shadow-xl flex flex-col justify-between group hover:border-indigo-400 transition-all">
+            <div className="bg-white rounded-2xl p-6 border-2 border-indigo-200 shadow-sm hover:shadow-xl hover:border-indigo-400 flex flex-col justify-between transition-all group">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 rounded-2xl bg-indigo-500/20 border border-indigo-400 flex items-center justify-center text-indigo-300 shrink-0">
+                <div className="flex items-center gap-3.5 mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0c1a30] to-[#142850] text-indigo-300 border-2 border-indigo-400 flex items-center justify-center shrink-0 shadow-md">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-base">Arvind Ujjwal</h3>
-                    <p className="text-indigo-300 text-xs font-semibold">Managing Director</p>
-                    <span className="text-[10px] text-slate-400">Academic Head &amp; Tech</span>
+                    <h3 className="font-extrabold text-slate-900 text-base group-hover:text-indigo-900 transition-colors">
+                      Arvind Ujjwal
+                    </h3>
+                    <p className="text-indigo-800 text-xs font-bold">Managing Director</p>
+                    <span className="text-[10px] bg-indigo-50 text-indigo-900 font-semibold px-2 py-0.5 rounded border border-indigo-200">
+                      Academic Head &amp; Tech
+                    </span>
                   </div>
                 </div>
-                <p className="text-xs text-slate-300 italic leading-relaxed">
+                <p className="text-xs text-slate-700 italic leading-relaxed bg-indigo-50/40 p-3 rounded-xl border border-indigo-100">
                   &ldquo;We integrate modern digital smart classes with targeted preparation for Navodaya, Netarhat, Simultala, IIT-JEE, and NEET so our students compete fearlessly on national platforms.&rdquo;
                 </p>
               </div>
-              <div className="mt-5 pt-3 border-t border-white/10 flex items-center justify-between text-xs">
-                <span className="text-[11px] text-slate-400">Competitive Rigor</span>
-                <Link href="/leadership#director" className="text-indigo-300 hover:underline font-semibold">
-                  Read Message →
+              <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span className="text-[11px] text-slate-500 font-medium">Competitive Rigor</span>
+                <Link href="/leadership#director" className="text-indigo-900 hover:text-indigo-950 font-bold hover:underline flex items-center gap-1">
+                  <span>Read Message</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>
 
             {/* Leader 3: Aparna Thakur - Principal */}
-            <div className="bg-gradient-to-b from-indigo-950 via-slate-950 to-slate-900 rounded-2xl p-6 border border-emerald-400/30 shadow-xl flex flex-col justify-between group hover:border-emerald-400 transition-all">
+            <div className="bg-white rounded-2xl p-6 border-2 border-emerald-200 shadow-sm hover:shadow-xl hover:border-emerald-400 flex flex-col justify-between transition-all group">
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 rounded-2xl bg-emerald-500/20 border border-emerald-400 flex items-center justify-center text-emerald-300 shrink-0">
+                <div className="flex items-center gap-3.5 mb-4">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0c1a30] to-[#142850] text-emerald-300 border-2 border-emerald-400 flex items-center justify-center shrink-0 shadow-md">
                     <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-base">Aparna Thakur</h3>
-                    <p className="text-emerald-300 text-xs font-semibold">Principal</p>
-                    <span className="text-[10px] text-slate-400">Student Welfare &amp; Culture</span>
+                    <h3 className="font-extrabold text-slate-900 text-base group-hover:text-emerald-900 transition-colors">
+                      Aparna Thakur
+                    </h3>
+                    <p className="text-emerald-800 text-xs font-bold">Principal</p>
+                    <span className="text-[10px] bg-emerald-50 text-emerald-900 font-semibold px-2 py-0.5 rounded border border-emerald-200">
+                      Student Welfare &amp; Culture
+                    </span>
                   </div>
                 </div>
-                <p className="text-xs text-slate-300 italic leading-relaxed">
+                <p className="text-xs text-slate-700 italic leading-relaxed bg-emerald-50/40 p-3 rounded-xl border border-emerald-100">
                   &ldquo;A school must be a sanctuary of curious inquiry and emotional safety. We nurture young personalities through individual mentoring, moral values, and creative activities.&rdquo;
                 </p>
               </div>
-              <div className="mt-5 pt-3 border-t border-white/10 flex items-center justify-between text-xs">
-                <span className="text-[11px] text-slate-400">Child-Centric Care</span>
-                <Link href="/leadership#principal" className="text-emerald-300 hover:underline font-semibold">
-                  Read Message →
+              <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span className="text-[11px] text-slate-500 font-medium">Child-Centric Care</span>
+                <Link href="/leadership#principal" className="text-emerald-800 hover:text-emerald-950 font-bold hover:underline flex items-center gap-1">
+                  <span>Read Message</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>
@@ -899,7 +914,7 @@ export default function HomePage() {
           <div className="mt-10 text-center">
             <Link
               href="/leadership"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all"
             >
               <span>Explore Complete Leadership Profiles &amp; Messages</span>
               <span>→</span>

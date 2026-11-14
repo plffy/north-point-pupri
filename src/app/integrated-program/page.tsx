@@ -25,7 +25,7 @@ export default function IntegratedProgramPage() {
   return (
     <div className="bg-white">
       {/* Hero Header */}
-      <section className="bg-gradient-to-r from-slate-950 via-indigo-950 to-slate-900 text-white py-16 px-4 sm:px-6 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#0c1a30] via-[#122649] to-[#1a3668] text-white py-16 px-4 sm:px-6 relative overflow-hidden border-t-4 border-amber-400">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex items-center gap-2 text-xs text-amber-400 font-semibold mb-2">

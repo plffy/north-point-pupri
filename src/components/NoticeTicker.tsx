@@ -46,7 +46,7 @@ export default function NoticeTicker() {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white text-xs md:text-sm border-b border-indigo-900/60 relative overflow-hidden py-2 px-3 z-30">
+    <div className="bg-[#0c1a30] text-white text-xs md:text-sm border-b border-amber-500/30 relative overflow-hidden py-2 px-3 z-30 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center gap-3">
         {/* Urgent Label */}
         <div className="flex items-center gap-1.5 shrink-0 bg-red-600 text-white font-bold uppercase tracking-wider text-[10px] md:text-xs px-2.5 py-0.5 rounded shadow-sm animate-pulse">
