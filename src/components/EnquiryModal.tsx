@@ -37,7 +37,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
       `*Parent Name:* ${formData.parentName || "N/A"}\n` +
       `*Phone:* ${formData.phone || "N/A"}\n` +
       `*Preferred Branch:* ${formData.preferredBranch}\n` +
-      `*Wing:* ${wing === "school" ? "North Point Children Academy (School)" : "North Point Career Institute"}\n` +
+      `*Wing:* ${wing === "school" ? "North Point Children Academy (School Admission)" : "Integrated Coaching Program (ISP)"}\n` +
       `*Class/Course:* ${formData.currentGrade} - ${formData.targetCourse}\n` +
       `*Location:* ${formData.locality || "Pupri / Bahera Zahidpur / Sitamarhi area"}\n` +
       (formData.message ? `*Notes:* ${formData.message}` : "")
@@ -93,7 +93,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                   : "text-slate-200 hover:text-white"
               }`}
             >
-              🎯 Career Institute (Coaching)
+              🎯 Integrated Coaching (ISP)
             </button>
           </div>
         </div>

@@ -52,16 +52,16 @@ export default function HomePage() {
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight sm:leading-tight">
               North Point Children Academy
               <span className="block text-2xl sm:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400 mt-2">
-                Excellence in Schooling &amp; Competitive Success
+                English Medium School with Integrated Competitive Coaching
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-sm sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
               Serving students across our two premier campuses at <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong>. 
-              Integrating English-medium education with dedicated preparation for{" "}
-              <span className="text-amber-300 font-semibold">Navodaya (JNVST), Netarhat, Simultala, Sainik School</span>, and target coaching for{" "}
-              <span className="text-amber-300 font-semibold">IIT-JEE &amp; NEET</span>.
+              A comprehensive educational sanctuary where regular CBSE schooling is seamlessly synchronized with intensive coaching for{" "}
+              <span className="text-amber-300 font-semibold">Navodaya (JNVST), Netarhat, Simultala, Sainik School</span>, and career foundation for{" "}
+              <span className="text-amber-300 font-semibold">IIT-JEE &amp; NEET</span> — all under one single roof.
             </p>
 
             {/* Action Buttons */}
@@ -70,19 +70,20 @@ export default function HomePage() {
                 onClick={() => openEnquiryModal("school")}
                 className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-bold text-sm shadow-lg hover:shadow-amber-500/25 transition-all transform hover:-translate-y-0.5"
               >
-                🏫 School Admission Enquiry
+                🏫 School Admission 2025–26
               </button>
-              <button
-                onClick={() => openEnquiryModal("institute")}
-                className="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-lg hover:shadow-indigo-600/30 transition-all border border-indigo-400/30 transform hover:-translate-y-0.5"
+              <Link
+                href="/integrated-program"
+                className="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-lg hover:shadow-indigo-600/30 transition-all border border-indigo-400/30 transform hover:-translate-y-0.5 inline-flex items-center gap-2"
               >
-                🎯 IIT-JEE / NEET Coaching Enquiry
-              </button>
+                <span>🎯 Integrated Coaching (ISP)</span>
+                <span className="text-xs">→</span>
+              </Link>
               <button
                 onClick={() => setBrochureOpen(true)}
                 className="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm backdrop-blur-md border border-white/20 transition-all flex items-center gap-2"
               >
-                <span>Download Prospectus</span>
+                <span>Prospectus PDF</span>
                 <span className="text-xs">↓</span>
               </button>
             </div>
@@ -161,18 +162,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Dual Wing Switcher & Quick Navigation */}
+      {/* The Integrated School Model Showcase */}
       <section className="py-12 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <h2 className="text-xs uppercase font-extrabold text-indigo-900 tracking-wider mb-2">
-              Choose Your Pathway
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider mb-2">
+              <SparklesIcon className="w-3.5 h-3.5 text-amber-600" />
+              <span>The North Point Advantage</span>
+            </div>
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
+              One School. Integrated Competitive Coaching. Zero Burnout.
             </h2>
-            <p className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Two Powerful Wings Under One Roof
-            </p>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Whether you want comprehensive schooling or focused competitive entrance coaching, North Point Children Academy provides specialized guidance tailored to your child.
+              North Point Children Academy operates on a synchronized model where regular CBSE schooling and high-stakes entrance coaching happen seamlessly within the school hours.
             </p>
 
             {/* Filter Tabs */}
@@ -185,7 +187,7 @@ export default function HomePage() {
                     : "text-slate-600 hover:text-slate-900"
                 }`}
               >
-                Overview (All Wings)
+                Complete Overview
               </button>
               <button
                 onClick={() => setActiveTab("school")}
@@ -195,7 +197,7 @@ export default function HomePage() {
                     : "text-slate-600 hover:text-slate-900"
                 }`}
               >
-                🏫 School Wing
+                🏫 Core Schooling
               </button>
               <button
                 onClick={() => setActiveTab("institute")}
@@ -205,20 +207,20 @@ export default function HomePage() {
                     : "text-slate-600 hover:text-slate-900"
                 }`}
               >
-                🎯 Career Institute (Coaching)
+                🎯 Integrated Coaching (ISP)
               </button>
             </div>
           </div>
 
           {/* Cards Display */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* School Wing Card */}
+            {/* Core Schooling Card */}
             {(activeTab === "all" || activeTab === "school") && (
               <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 flex flex-col justify-between group">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold uppercase tracking-wider text-indigo-900 bg-indigo-50 px-3 py-1 rounded-full">
-                      Holistic Education
+                      Pillar 1 • Core Schooling
                     </span>
                     <span className="text-2xl">🏫</span>
                   </div>
@@ -228,8 +230,8 @@ export default function HomePage() {
                   </h3>
 
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    A vibrant learning ecosystem built on CBSE curriculum guidelines, digital smart classrooms, and experimental science labs across our Rajbag (Pupri) and Bahera Zahidpur campuses. 
-                    Equipping students with strong moral foundations, English communication, and sports.
+                    A vibrant learning ecosystem built on CBSE curriculum guidelines, digital smart classrooms, and experimental science labs across our <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur</strong> campuses. 
+                    Equipping students with strong moral foundations, English fluency, and sports.
                   </p>
 
                   <div className="space-y-2 pt-2 border-t border-slate-100">
@@ -243,7 +245,7 @@ export default function HomePage() {
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-indigo-600 font-bold">✓</span>
-                        <span>Integrated preparation for Navodaya (JNVST) &amp; Netarhat</span>
+                        <span>Audiovisual digital smart boards for conceptual clarity</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-indigo-600 font-bold">✓</span>
@@ -262,57 +264,56 @@ export default function HomePage() {
                     href="/school/academics"
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-indigo-900 hover:bg-indigo-800 text-white text-xs font-semibold shadow-md transition-colors"
                   >
-                    <span>Explore School</span>
+                    <span>Academic Curriculum</span>
                     <ArrowRightIcon className="w-3.5 h-3.5" />
                   </Link>
                   <button
                     onClick={() => openEnquiryModal("school")}
                     className="px-4 py-2 rounded-xl border border-indigo-900 text-indigo-900 hover:bg-indigo-50 text-xs font-semibold transition-colors"
                   >
-                    Admission Guidelines
+                    School Admission Guidelines
                   </button>
                 </div>
               </div>
             )}
 
-            {/* Institute Wing Card */}
+            {/* Integrated Coaching (ISP) Card */}
             {(activeTab === "all" || activeTab === "institute") && (
-              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all border border-amber-200/80 flex flex-col justify-between group relative overflow-hidden">
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all border border-amber-300 flex flex-col justify-between group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-400/10 rounded-bl-full pointer-events-none"></div>
 
                 <div className="space-y-4 relative z-10">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
-                      Competitive Entrance Wing
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                      Pillar 2 • Integrated Program (ISP)
                     </span>
                     <span className="text-2xl">🎯</span>
                   </div>
 
                   <h3 className="text-2xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
-                    North Point Career Institute
+                    Integrated Competitive Coaching
                   </h3>
 
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Dedicated competitive training division designed to prepare students for India&apos;s toughest examinations: 
-                    IIT-JEE, NEET-UG, and Pre-Foundation with experienced faculty, OMR testing, and doubt-clearing sessions.
+                    Synchronized competitive coaching integrated directly into the school schedule. No evening rush or external tuition fatigue. Preparing students for India&apos;s most prestigious entrance exams.
                   </p>
 
                   <div className="space-y-2 pt-2 border-t border-slate-100">
                     <div className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      Key Highlights:
+                      Integrated Entrance Streams:
                     </div>
                     <ul className="space-y-1.5 text-xs text-slate-600">
                       <li className="flex items-center gap-2">
                         <span className="text-amber-600 font-bold">✓</span>
-                        <span>2-Year Comprehensive Classroom Program for IIT-JEE (Main + Adv)</span>
+                        <span><strong>Junior Wing:</strong> Navodaya (JNVST), Netarhat, Simultala &amp; Sainik School (AISSEE)</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-amber-600 font-bold">✓</span>
-                        <span>Target NEET-UG Medical batch with rigorous biology &amp; physics drills</span>
+                        <span><strong>Senior Wing:</strong> IIT-JEE (Mains + Advanced) &amp; NEET-UG Medical foundation</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-amber-600 font-bold">✓</span>
-                        <span>Pre-Foundation Courses building early aptitude from middle school</span>
+                        <span>Daily Practice Problems (DPP) &amp; bi-weekly OMR speed tests</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="text-amber-600 font-bold">✓</span>
@@ -324,10 +325,10 @@ export default function HomePage() {
 
                 <div className="pt-6 flex flex-wrap items-center gap-3 relative z-10">
                   <Link
-                    href="/institute/courses"
+                    href="/integrated-program"
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold shadow-md transition-colors"
                   >
-                    <span>View All Courses</span>
+                    <span>How ISP Works</span>
                     <ArrowRightIcon className="w-3.5 h-3.5" />
                   </Link>
                   <button

@@ -41,12 +41,12 @@ export default function Footer() {
                   North Point Children Academy
                 </span>
                 <span className="text-xs font-semibold text-amber-400 uppercase tracking-wider block">
-                  Public School &amp; Career Institute
+                  English Medium School with Integrated Coaching
                 </span>
               </div>
             </div>
             <p className="text-xs md:text-sm text-slate-400 leading-relaxed max-w-sm">
-              Established in Sitamarhi district with premier branches at <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong> to deliver top-caliber schooling and competitive entrance coaching.
+              Premier schooling with synchronized competitive entrance coaching for <strong>Navodaya (JNVST), Netarhat, Sainik School, IIT-JEE, and NEET</strong> across our campuses at <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong>.
             </p>
             <div className="pt-2 flex items-center gap-3">
               <a
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Column 2: School Programs */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider">
-              School Wing
+              School Academics
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
@@ -80,72 +80,57 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
-                  Navodaya (JNVST) Preparation
-                </Link>
-              </li>
-              <li>
-                <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
-                  Netarhat &amp; Simultala Vidyalaya
-                </Link>
-              </li>
-              <li>
-                <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
-                  Sainik School (AISSEE) Prep
-                </Link>
-              </li>
-              <li>
-                <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
-                  SOF Olympiads &amp; NMMS Scholarship
-                </Link>
-              </li>
-              <li>
                 <Link href="/school/beyond-classroom" className="hover:text-amber-300 transition-colors">
                   Sports, NCC &amp; Cultural Clubs
                 </Link>
               </li>
               <li>
+                <Link href="/school/results" className="hover:text-amber-300 transition-colors">
+                  100% Board Pass Rate &amp; Toppers
+                </Link>
+              </li>
+              <li>
+                <Link href="/leadership" className="hover:text-amber-300 transition-colors">
+                  Founders &amp; Leadership Desk
+                </Link>
+              </li>
+              <li>
                 <Link href="/school/admissions" className="hover:text-amber-300 transition-colors">
-                  Admission Criteria &amp; Fee Guide
+                  School Admission Guidelines
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Institute Coaching Wing */}
+          {/* Column 3: Integrated Coaching (ISP) */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider">
-              Career Institute
+            <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+              <span>🎯 Integrated Coaching (ISP)</span>
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/institute/courses" className="hover:text-amber-300 transition-colors">
-                  IIT-JEE (Main + Advanced) 2-Year
+                <Link href="/integrated-program" className="hover:text-amber-300 transition-colors font-semibold text-amber-300">
+                  What is Integrated School Program?
+                </Link>
+              </li>
+              <li>
+                <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
+                  Navodaya (JNVST) &amp; Netarhat Wing
+                </Link>
+              </li>
+              <li>
+                <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
+                  Sainik School (AISSEE) &amp; Simultala
                 </Link>
               </li>
               <li>
                 <Link href="/institute/courses" className="hover:text-amber-300 transition-colors">
-                  NEET-UG Medical Classroom
-                </Link>
-              </li>
-              <li>
-                <Link href="/institute/courses" className="hover:text-amber-300 transition-colors">
-                  Pre-Foundation &amp; Olympiad Wing
-                </Link>
-              </li>
-              <li>
-                <Link href="/institute/courses" className="hover:text-amber-300 transition-colors">
-                  1-Year Dropper / Target Batches
+                  IIT-JEE &amp; NEET Foundation
                 </Link>
               </li>
               <li>
                 <Link href="/institute/faculty" className="hover:text-amber-300 transition-colors">
-                  Our Faculty &amp; Mentorship Model
-                </Link>
-              </li>
-              <li>
-                <Link href="/institute/results" className="hover:text-amber-300 transition-colors">
-                  Hall of Fame &amp; Top Ranks
+                  Synchronized Timetable &amp; Mentors
                 </Link>
               </li>
               <li>
