@@ -125,6 +125,34 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Leadership & Management Preview */}
+      <section className="py-14 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-950 text-white rounded-3xl p-8 sm:p-12 border border-indigo-900/40 shadow-xl">
+            <div className="max-w-3xl space-y-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/20 px-3 py-1 rounded-full border border-amber-400/30">
+                School Leadership &amp; Governance
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-white">
+                Meet the Visionaries Leading North Point Children Academy
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Guided by <strong>Ashok Kumar Thakur</strong> (Founder &amp; Chairman), <strong>Arvind Ujjwal</strong> (Managing Director), and <strong>Aparna Thakur</strong> (Principal). Together they steer our academic standards, student welfare, and competitive coaching excellence across Pupri and Bahera Zahidpur.
+              </p>
+              <div className="pt-2">
+                <Link
+                  href="/leadership"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-md transition-all"
+                >
+                  <span>Read Leadership Messages &amp; Vision</span>
+                  <span>→</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-12 bg-indigo-950 text-white text-center px-4">
         <h3 className="text-2xl font-bold">Visit North Point Children Academy Today</h3>

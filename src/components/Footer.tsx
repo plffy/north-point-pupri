@@ -199,6 +199,8 @@ export default function Footer() {
           <div className="flex items-center gap-4 text-[11px]">
             <Link href="/about" className="hover:text-slate-300">About Campuses</Link>
             <span>•</span>
+            <Link href="/leadership" className="hover:text-amber-300 font-semibold">Leadership &amp; Founders</Link>
+            <span>•</span>
             <Link href="/school/admissions" className="hover:text-slate-300">Admission Process</Link>
             <span>•</span>
             <Link href="/contact" className="hover:text-slate-300">Branches Map</Link>

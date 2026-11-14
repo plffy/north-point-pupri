@@ -110,6 +110,17 @@ export default function Header() {
                 About Us
               </Link>
 
+              <Link
+                href="/leadership"
+                className={`px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                  pathname === "/leadership"
+                    ? "text-indigo-900 bg-indigo-50 font-bold"
+                    : "text-slate-700 hover:text-indigo-900 hover:bg-slate-50"
+                }`}
+              >
+                Leadership
+              </Link>
+
               {/* School Dropdown */}
               <div
                 className="relative"
@@ -319,6 +330,13 @@ export default function Header() {
                 className="block py-2 text-sm font-semibold text-slate-800"
               >
                 About Us
+              </Link>
+              <Link
+                href="/leadership"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block py-2 text-sm font-semibold text-indigo-900 bg-indigo-50/50 px-2 rounded-lg"
+              >
+                Leadership &amp; Founders
               </Link>
 
               {/* School Section */}
