@@ -3,9 +3,9 @@ import Link from "next/link";
 import { TrophyIcon, CheckCircleIcon, SparklesIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "School Results & Achievements | North Point Public School Pupri",
+  title: "School Results & Achievements | North Point Children Academy",
   description:
-    "Explore board pass percentages, district rankers, and Navodaya/Simultala selections from North Point Public School, Pupri.",
+    "Explore board pass percentages, district rankers, and Navodaya/Simultala selections from North Point Children Academy (Rajbag, Pupri & Bahera Zahidpur).",
 };
 
 export default function SchoolResultsPage() {
@@ -23,7 +23,7 @@ export default function SchoolResultsPage() {
           </div>
           <h1 className="text-3xl sm:text-5xl font-black">School Results &amp; Honors</h1>
           <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
-            Academic distinction, competitive selection milestones, and student leadership honors at North Point Pupri.
+            Academic distinction, competitive selection milestones, and student leadership honors across North Point Children Academy (Rajbag &amp; Bahera Zahidpur campuses).
           </p>
         </div>
       </section>

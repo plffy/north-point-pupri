@@ -210,12 +210,12 @@ export default function GalleryPage() {
           </p>
           <div className="pt-2">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918294407171"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow transition-colors"
             >
-              Connect to School Broadcast on WhatsApp
+              Connect to School Broadcast on WhatsApp: 8294407171
             </a>
           </div>
         </div>

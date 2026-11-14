@@ -12,13 +12,13 @@ export default function WhatsAppButton() {
       {showTooltip && (
         <div className="mb-2 bg-slate-900 text-white text-xs py-1.5 px-3 rounded-lg shadow-xl border border-slate-700 whitespace-nowrap animate-fade-in flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-          <span>Have an admission query? Chat with our team!</span>
+          <span>Have an admission query? Chat on 8294407171!</span>
         </div>
       )}
 
       {/* Main floating circle */}
       <a
-        href="https://wa.me/919876543210?text=Hello%20North%20Point%20Pupri%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20and%20courses."
+        href="https://wa.me/918294407171?text=Hello%20North%20Point%20Children%20Academy%2C%20I%20would%20like%20to%20know%20more%20about%20admissions%20for%20Rajbag%20Pupri%20or%20Bahera%20Zahidpur%20branch."
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={() => setShowTooltip(true)}

@@ -10,6 +10,7 @@ interface BrochureModalProps {
 
 export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
   const [phone, setPhone] = useState("");
+  const [branch, setBranch] = useState("Rajbag, Pupri");
   const [isDownloaded, setIsDownloaded] = useState(false);
 
   if (!isOpen) return null;
@@ -17,7 +18,6 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
   const handleDownload = (e: React.FormEvent) => {
     e.preventDefault();
     setIsDownloaded(true);
-    // In production, this can trigger a PDF download or link to cloud storage
   };
 
   return (
@@ -34,9 +34,9 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
           <div className="text-xs uppercase tracking-wider font-semibold text-amber-400 mb-1">
             Information Prospectus 2025–26
           </div>
-          <h3 className="text-lg font-bold">North Point Pupri Handbook</h3>
+          <h3 className="text-lg font-bold">North Point Children Academy</h3>
           <p className="text-xs text-slate-300 mt-1">
-            Curriculum details, admission rules, competitive exam roadmap, and fee guidelines.
+            Rajbag (Pupri) &amp; Bahera Zahidpur Campuses | Mob: 8294407171
           </p>
         </div>
 
@@ -48,19 +48,19 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
               </div>
               <h4 className="text-lg font-bold text-slate-900">Prospectus Access Granted!</h4>
               <p className="text-xs text-slate-600 mt-2">
-                A digital copy has been prepared. You can also receive our complete fee structure and exam syllabus directly on WhatsApp.
+                A digital prospectus has been prepared. You can also receive our complete fee structure and exam syllabus directly on WhatsApp.
               </p>
               <div className="mt-5 space-y-2">
                 <a
-                  href={`https://wa.me/919876543210?text=${encodeURIComponent(
-                    "Hello North Point Pupri, please send me the complete Prospectus PDF & Fee Structure."
+                  href={`https://wa.me/918294407171?text=${encodeURIComponent(
+                    `Hello North Point Children Academy, please send me the complete Prospectus PDF & Fee Structure for ${branch}.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs shadow-md transition-colors"
                 >
                   <WhatsAppIcon className="w-4 h-4" />
-                  Get PDF on WhatsApp Instantly
+                  Get PDF on WhatsApp Instantly (8294407171)
                 </a>
                 <button
                   type="button"
@@ -76,20 +76,34 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
               <div className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 space-y-2">
                 <div className="flex items-start gap-2.5">
                   <span className="text-amber-500 font-bold text-sm">✔</span>
-                  <span className="text-xs text-slate-700">Detailed CBSE curriculum structure & Smart Class methodology</span>
+                  <span className="text-xs text-slate-700">Detailed CBSE curriculum structure &amp; Smart Class methodology</span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="text-amber-500 font-bold text-sm">✔</span>
-                  <span className="text-xs text-slate-700">Navodaya (JNVST), Netarhat, Simultala, & Sainik School roadmap</span>
+                  <span className="text-xs text-slate-700">Navodaya (JNVST), Netarhat, Simultala, &amp; Sainik School roadmap</span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="text-amber-500 font-bold text-sm">✔</span>
-                  <span className="text-xs text-slate-700">IIT-JEE & NEET-UG Foundation course schedule & faculty profiles</span>
+                  <span className="text-xs text-slate-700">IIT-JEE &amp; NEET-UG Foundation course schedule &amp; faculty profiles</span>
                 </div>
                 <div className="flex items-start gap-2.5">
                   <span className="text-amber-500 font-bold text-sm">✔</span>
-                  <span className="text-xs text-slate-700">Transport route map covering Pupri block & rural areas</span>
+                  <span className="text-xs text-slate-700">Bus transport routes for Rajbag, Pupri, and Bahera Zahidpur</span>
                 </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-slate-700 mb-1">
+                  Select Preferred Branch
+                </label>
+                <select
+                  value={branch}
+                  onChange={(e) => setBranch(e.target.value)}
+                  className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-white"
+                >
+                  <option value="Rajbag, Pupri">Branch 1: Rajbag, Pupri</option>
+                  <option value="Bahera Zahidpur (Nanpur)">Branch 2: Bahera Zahidpur (Nanpur)</option>
+                </select>
               </div>
 
               <div>

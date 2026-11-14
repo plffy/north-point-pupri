@@ -16,7 +16,7 @@ const NOTICES: Notice[] = [
     id: "1",
     badge: "Admissions 2025-26",
     badgeColor: "bg-red-500",
-    text: "Registration open for New Admissions (Pre-Primary to Secondary) & Foundation Batches. Limited seats!",
+    text: "North Point Children Academy: Admissions open at both Rajbag (Pupri) & Bahera Zahidpur branches! Call 8294407171.",
     link: "/school/admissions",
   },
   {
@@ -95,14 +95,14 @@ export default function NoticeTicker() {
             href="/contact"
             className="text-[11px] font-medium text-amber-300 hover:text-amber-200 underline decoration-amber-400/50"
           >
-            Pupri, Sitamarhi
+            Rajbag, Pupri / Bahera Zahidpur
           </Link>
           <span className="text-slate-600">|</span>
           <a
-            href="tel:+919876543210"
+            href="tel:+918294407171"
             className="text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 px-2 py-0.5 rounded border border-emerald-500/30 transition-colors"
           >
-            Helpline: +91 98765 43210
+            Helpline: 8294407171
           </a>
         </div>
       </div>

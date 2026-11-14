@@ -6,20 +6,21 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "North Point Pupri — Public School & Premier Career Institute | Sitamarhi, Bihar",
+  title: "North Point Children Academy | Rajbag, Pupri & Bahera Zahidpur | School & Career Institute",
   description:
-    "North Point Pupri is a premier educational institution in Pupri (Sitamarhi, Bihar) providing CBSE-aligned school education, dedicated preparation for Navodaya (JNVST), Netarhat, Simultala, Sainik School, Olympiads, and target coaching for IIT-JEE & NEET-UG.",
+    "North Point Children Academy is a premier educational institution in Sitamarhi (Bihar) with branches at Rajbag (Pupri) and Bahera Zahidpur (Nanpur), providing CBSE-aligned education, Navodaya (JNVST), Netarhat, Simultala, Sainik School, Olympiad preparation, and IIT-JEE/NEET coaching. Mobile: 8294407171.",
   keywords: [
-    "North Point Pupri",
-    "School in Pupri",
+    "North Point Children Academy",
+    "North Point Children Academy Pupri",
+    "North Point Children Academy Bahera Zahidpur",
+    "School in Rajbag Pupri",
+    "School in Bahera Zahidpur Nanpur",
     "Best school in Sitamarhi",
     "Navodaya preparation Bihar",
     "Netarhat entrance coaching",
     "Simultala Awasiya Vidyalaya coaching",
-    "Sainik school coaching Sitamarhi",
     "IIT JEE coaching Pupri",
-    "NEET medical coaching Bihar",
-    "CBSE school Pupri",
+    "NEET coaching Sitamarhi",
   ],
 };
 

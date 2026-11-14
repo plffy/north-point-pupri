@@ -3,9 +3,9 @@ import Link from "next/link";
 import { UserGroupIcon, CheckCircleIcon, SparklesIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "Faculty & Mentorship | North Point Career Institute Pupri",
+  title: "Faculty & Mentorship | North Point Children Academy Career Institute",
   description:
-    "Meet our expert teaching faculty and academic mentors for IIT-JEE, NEET-UG, and Foundation at North Point Pupri, Sitamarhi.",
+    "Meet our expert teaching faculty and academic mentors for IIT-JEE, NEET-UG, and Foundation at North Point Children Academy (Rajbag, Pupri & Bahera Zahidpur). Mob: 8294407171.",
 };
 
 export default function InstituteFacultyPage() {
@@ -125,7 +125,7 @@ export default function InstituteFacultyPage() {
             No 200-Student Mega Auditoriums
           </h2>
           <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-            Unlike commercial coaching factories where students become just a roll number in crowded halls, North Point maintains strictly capped batch sizes of <strong>30 to 35 students</strong>. Every student is personally known to their subject teachers.
+            Unlike commercial coaching factories where students become just a roll number in crowded halls, North Point Children Academy maintains strictly capped batch sizes of <strong>30 to 35 students</strong> across both campuses. Every student is personally known to their subject teachers.
           </p>
           <div className="pt-2">
             <Link

@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import { CheckCircleIcon, ArrowRightIcon, AcademicCapIcon, TrophyIcon, ShieldCheckIcon, UserGroupIcon } from "@/components/Icons";
+import { CheckCircleIcon, ArrowRightIcon, AcademicCapIcon, TrophyIcon, ShieldCheckIcon, UserGroupIcon, LocationMarkerIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "About Us | North Point Pupri (School & Institute)",
-  description: "Learn about North Point Pupri's history, vision, leadership, and mission to deliver elite education in Sitamarhi district, Bihar.",
+  title: "About Us | North Point Children Academy (Rajbag, Pupri & Bahera Zahidpur)",
+  description:
+    "Learn about North Point Children Academy's two branches at Rajbag (Pupri) and Bahera Zahidpur (Nanpur), Sitamarhi, Bihar. Dedicated schooling and competitive entrance coaching. Mob: 8294407171.",
 };
 
 export default function AboutPage() {
@@ -18,9 +19,9 @@ export default function AboutPage() {
             <span>/</span>
             <span>About Us</span>
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black">About North Point Pupri</h1>
+          <h1 className="text-3xl sm:text-5xl font-black">About North Point Children Academy</h1>
           <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl">
-            Pioneering academic excellence, competitive exam orientation, and holistic character development in Pupri, Sitamarhi (Bihar).
+            Pioneering academic excellence, competitive exam orientation, and holistic character development across our campuses in <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong>, Sitamarhi (Bihar).
           </p>
         </div>
       </section>
@@ -33,18 +34,18 @@ export default function AboutPage() {
               Our Journey &amp; Vision
             </span>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
-              Bridging the Educational Gap in North Bihar
+              Bridging the Educational Gap in Sitamarhi District
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Founded with the conviction that geography should never limit a child&apos;s ambition, <strong>North Point Pupri</strong> was born to provide rural and semi-urban families access to high-caliber schooling and early competitive exam mentorship.
+              Founded with the conviction that geography should never limit a child&apos;s ambition, <strong>North Point Children Academy</strong> was established to provide rural and semi-urban families access to high-caliber schooling and early competitive exam mentorship.
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Traditionally, parents in Sitamarhi district who wanted their children to crack residential tests like <strong>Navodaya (JNVST), Netarhat</strong>, or build solid roots for <strong>IIT-JEE and NEET</strong> had to send 10-year-olds away to Patna or distant cities. North Point brings that entire infrastructure, pedagogical discipline, and faculty expertise directly to Pupri.
+              With two prominent campuses—at <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong>—we ensure students from across Sitamarhi district do not have to move away at a tender age to Patna or Kota for cracking entrance tests like <strong>Navodaya (JNVST), Netarhat, Simultala</strong>, or foundation for <strong>IIT-JEE &amp; NEET</strong>.
             </p>
             <div className="pt-2 grid grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                <div className="text-xl font-bold text-indigo-900">CBSE Model</div>
-                <div className="text-xs text-slate-500 mt-1">Holistic English medium with cultural values</div>
+                <div className="text-xl font-bold text-indigo-900">2 Campuses</div>
+                <div className="text-xs text-slate-500 mt-1">Rajbag (Pupri) &amp; Bahera Zahidpur</div>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <div className="text-xl font-bold text-amber-600">Dual Edge</div>
@@ -82,45 +83,43 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership & Advisory Message */}
+      {/* Two Campuses Showcase */}
       <section className="py-14 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs font-bold uppercase text-indigo-900 tracking-wider">Leadership</span>
+            <span className="text-xs font-bold uppercase text-indigo-900 tracking-wider">Our Campuses</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-              Guiding Principles of North Point
+              Two Convenient Locations
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-900 flex items-center justify-center font-bold">
-                1
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-indigo-900 text-white flex items-center justify-center font-bold text-xs">
+                  01
+                </span>
+                <span className="text-xs font-bold uppercase tracking-wider text-indigo-900">Pupri Sub-Division</span>
               </div>
-              <h3 className="text-base font-bold text-slate-900">Academic Rigor</h3>
+              <h3 className="text-xl font-bold text-slate-900">Rajbag Campus, Pupri</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Daily formative tracking, weekly doubt clearing, and continuous assessments to ensure every student masters the NCERT fundamentals.
+                Located conveniently at Rajbag, Pupri, serving students from Pupri town, Janakpur Road, and surrounding blocks. Features modern classrooms, science lab, and dedicated competitive coaching wing.
               </p>
+              <div className="text-xs font-semibold text-emerald-700">Mob: 8294407171</div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold">
-                2
+            <div className="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-amber-600 text-white flex items-center justify-center font-bold text-xs">
+                  02
+                </span>
+                <span className="text-xs font-bold uppercase tracking-wider text-amber-700">Nanpur Block</span>
               </div>
-              <h3 className="text-base font-bold text-slate-900">Moral Character &amp; Ethics</h3>
+              <h3 className="text-xl font-bold text-slate-900">Bahera Zahidpur Campus</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Nurturing discipline, respect for elders, national pride, community empathy, and environmental stewardship in daily school routines.
+                Located at Bahera Zahidpur, Nanpur, bringing world-class schooling and Navodaya/Olympiad coaching closer to rural students in Nanpur, Bajpatti, and adjoining villages.
               </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold">
-                3
-              </div>
-              <h3 className="text-base font-bold text-slate-900">Parental Partnership</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Regular Parent-Teacher Meetings (PTMs), transparent attendance reporting via SMS/WhatsApp, and one-on-one progress counseling.
-              </p>
+              <div className="text-xs font-semibold text-emerald-700">Mob: 8294407171</div>
             </div>
           </div>
         </div>
@@ -128,16 +127,16 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-12 bg-indigo-950 text-white text-center px-4">
-        <h3 className="text-2xl font-bold">Visit North Point Pupri Campus Today</h3>
+        <h3 className="text-2xl font-bold">Visit North Point Children Academy Today</h3>
         <p className="text-xs sm:text-sm text-slate-300 mt-2 max-w-md mx-auto">
-          We invite parents and guardians to tour our smart classrooms, science labs, and meet our teachers.
+          We invite parents and guardians to tour our smart classrooms, science labs, and meet our teachers. Call <strong>8294407171</strong>.
         </p>
         <div className="mt-6 flex justify-center gap-3">
           <Link
             href="/contact"
             className="px-5 py-2.5 rounded-xl bg-amber-400 text-slate-950 font-bold text-xs uppercase shadow hover:bg-amber-300 transition-colors"
           >
-            Schedule Campus Visit
+            Contact &amp; Location Map
           </Link>
           <Link
             href="/school/admissions"

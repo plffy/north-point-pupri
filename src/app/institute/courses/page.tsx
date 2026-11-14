@@ -3,9 +3,9 @@ import Link from "next/link";
 import { CheckCircleIcon, ArrowRightIcon, AcademicCapIcon, BeakerIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "Coaching Courses | IIT-JEE, NEET-UG & Pre-Foundation | North Point Career Institute Pupri",
+  title: "Coaching Courses | IIT-JEE, NEET-UG & Pre-Foundation | North Point Children Academy Career Institute",
   description:
-    "Explore engineering (IIT-JEE Main/Adv), medical (NEET-UG), and pre-foundation coaching programs at North Point Career Institute, Pupri, Sitamarhi.",
+    "Explore engineering (IIT-JEE Main/Adv), medical (NEET-UG), and pre-foundation coaching programs at North Point Children Academy (Rajbag, Pupri & Bahera Zahidpur). Mob: 8294407171.",
 };
 
 export default function InstituteCoursesPage() {

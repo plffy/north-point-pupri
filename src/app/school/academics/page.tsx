@@ -3,9 +3,9 @@ import Link from "next/link";
 import { BookOpenIcon, CheckCircleIcon, ComputerDesktopIcon, BeakerIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "Academics & Pedagogy | North Point Public School Pupri",
+  title: "Academics & Pedagogy | North Point Children Academy (Rajbag & Bahera Zahidpur)",
   description:
-    "Explore the academic structure, CBSE curriculum, smart digital pedagogy, and assessment systems at North Point Public School, Pupri.",
+    "Explore the academic structure, CBSE curriculum, smart digital pedagogy, and assessment systems at North Point Children Academy across our Rajbag (Pupri) and Bahera Zahidpur campuses. Mob: 8294407171.",
 };
 
 export default function AcademicsPage() {
@@ -125,7 +125,7 @@ export default function AcademicsPage() {
           <div className="max-w-2xl">
             <span className="text-xs font-bold uppercase text-amber-400 tracking-wider">Methodology</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold mt-1">
-              How North Point Teaches Differently
+              How North Point Children Academy Teaches Differently
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-2">
               Combining modern audio-visual technology with traditional rigor to maximize student engagement.
@@ -165,7 +165,7 @@ export default function AcademicsPage() {
       <section className="py-12 bg-indigo-50 border-t border-indigo-100 text-center px-4">
         <h3 className="text-2xl font-bold text-slate-900">Experience Our Smart Classrooms</h3>
         <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-md mx-auto">
-          Visit the North Point Pupri campus to see our classes in action and discuss the curriculum with our principal.
+          Visit our Rajbag (Pupri) or Bahera Zahidpur campus to see our classes in action. Call 8294407171.
         </p>
         <div className="mt-5 flex justify-center gap-3">
           <Link

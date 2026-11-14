@@ -27,7 +27,7 @@ export default function SchoolAdmissionsPage() {
           </span>
           <h1 className="text-3xl sm:text-5xl font-black">School Admissions &amp; Enrollment</h1>
           <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl">
-            Welcome to the North Point family. We maintain a transparent, merit-oriented, and parent-friendly admission process.
+            Welcome to the North Point Children Academy family. Admissions open across both campuses at Rajbag (Pupri) and Bahera Zahidpur (Nanpur). Helpline: 8294407171.
           </p>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function SchoolAdmissionsPage() {
               </div>
               <h3 className="text-base font-bold text-slate-900">Enquiry &amp; Registration</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Fill the online enquiry form or collect the prospectus directly from the school reception at Pupri.
+                Fill the online enquiry form or collect the prospectus directly from our school reception at Rajbag (Pupri) or Bahera Zahidpur (Nanpur). Mob: 8294407171.
               </p>
             </div>
 

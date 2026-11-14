@@ -3,9 +3,9 @@ import Link from "next/link";
 import { TrophyIcon, SparklesIcon, ShieldCheckIcon, UserGroupIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "Beyond the Classroom | Sports, Arts & Activities | North Point Pupri",
+  title: "Beyond the Classroom | Sports, Arts & Activities | North Point Children Academy",
   description:
-    "Discover sports, physical fitness, NCC/Scouts, literary clubs, cultural fests, and house competitions at North Point Pupri.",
+    "Discover sports, physical fitness, NCC/Scouts, literary clubs, cultural fests, and house competitions at North Point Children Academy (Rajbag, Pupri & Bahera Zahidpur).",
 };
 
 export default function BeyondClassroomPage() {
@@ -23,7 +23,7 @@ export default function BeyondClassroomPage() {
           </div>
           <h1 className="text-3xl sm:text-5xl font-black">Beyond the Classroom</h1>
           <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl">
-            Character, courage, creativity, and camaraderie. At North Point, learning extends far beyond textbooks into the sports ground, arts studio, and community service.
+            Character, courage, creativity, and camaraderie. At North Point Children Academy, learning extends far beyond textbooks into the sports ground, arts studio, and community service across our Rajbag (Pupri) and Bahera Zahidpur campuses.
           </p>
         </div>
       </section>

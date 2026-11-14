@@ -10,9 +10,9 @@ import {
 } from "@/components/Icons";
 
 export const metadata = {
-  title: "Competitive Exams Hub | Navodaya, Netarhat, Simultala, Sainik School & Olympiads | North Point Pupri",
+  title: "Competitive Exams Hub | Navodaya, Netarhat, Simultala, Sainik School & Olympiads | North Point Children Academy",
   description:
-    "Comprehensive preparation for Navodaya (JNVST), Netarhat Awasiya Vidyalaya, Simultala (SAV Jamui), Sainik School (AISSEE), SOF Olympiads (NSO/IMO), and NMMS scholarships in Pupri, Bihar.",
+    "Comprehensive preparation for Navodaya (JNVST), Netarhat Awasiya Vidyalaya, Simultala (SAV Jamui), Sainik School (AISSEE), SOF Olympiads (NSO/IMO), and NMMS scholarships across Rajbag (Pupri) & Bahera Zahidpur campuses.",
 };
 
 export default function CompetitiveExamsPage() {
@@ -36,7 +36,7 @@ export default function CompetitiveExamsPage() {
           </h1>
           <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
             In Bihar and across India, getting into top residential institutions and national olympiads opens lifelong doors. 
-            North Point Pupri provides early, integrated preparation to build analytical champions.
+            North Point Children Academy provides early, integrated preparation across both Rajbag (Pupri) and Bahera Zahidpur campuses to build analytical champions.
           </p>
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function CompetitiveExamsPage() {
               </div>
 
               <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950 space-y-1.5">
-                <div className="font-bold">🌟 North Point Pupri&apos;s Navodaya Strategy:</div>
+                <div className="font-bold">🌟 North Point Children Academy&apos;s Navodaya Strategy:</div>
                 <p>
                   Special morning and evening drills, 100+ simulated OMR mock tests, previous 15 years solved paper discussions, and special focus on time management so students complete the 80 questions in under 120 minutes with zero silly errors.
                 </p>
@@ -272,7 +272,7 @@ export default function CompetitiveExamsPage() {
                 National &amp; International Competitions
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                North Point Pupri serves as an authorized school center for national olympiads, giving students early national ranking experience.
+                North Point Children Academy serves as an authorized school center for national olympiads across both branches, giving students early national ranking experience.
               </p>
             </div>
 
@@ -333,7 +333,7 @@ export default function CompetitiveExamsPage() {
           <div>
             <h3 className="text-xl font-bold">Want your child to prepare for Navodaya or Olympiads?</h3>
             <p className="text-xs sm:text-sm text-slate-300 mt-1">
-              Enroll in North Point Pupri’s Integrated Competitive Wing today. Limited batch capacity.
+              Enroll in North Point Children Academy’s Integrated Competitive Wing today. Call 8294407171. Limited batch capacity.
             </p>
           </div>
           <Link

@@ -51,7 +51,7 @@ export default function InstituteAdmissionsPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 pt-2">
               <div className="bg-white p-4 rounded-xl border border-slate-200 text-xs">
                 <div className="font-bold text-slate-900">Exam Mode</div>
-                <div className="text-slate-500 mt-1">Offline OMR Pen &amp; Paper Test at North Point Campus, Pupri</div>
+                <div className="text-slate-500 mt-1">Offline OMR Pen &amp; Paper Test at Rajbag (Pupri) &amp; Bahera Zahidpur Campuses</div>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-200 text-xs">
                 <div className="font-bold text-slate-900">Subjects Tested</div>
@@ -75,13 +75,13 @@ export default function InstituteAdmissionsPage() {
                 Register for Next SCAT Test Date
               </button>
               <a
-                href="https://wa.me/919876543210?text=Hello%20North%20Point%2C%20please%20register%20me%20for%20the%20upcoming%20SCAT%20Scholarship%20Test."
+                href="https://wa.me/918294407171?text=Hello%20North%20Point%20Children%20Academy%2C%20please%20register%20me%20for%20the%20upcoming%20SCAT%20Scholarship%20Test."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase shadow transition-colors inline-flex items-center gap-1.5"
               >
                 <WhatsAppIcon className="w-4 h-4" />
-                <span>Instant WhatsApp Registration</span>
+                <span>Instant WhatsApp Registration (8294407171)</span>
               </a>
             </div>
           </div>

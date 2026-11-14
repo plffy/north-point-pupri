@@ -15,6 +15,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
     studentName: "",
     parentName: "",
     phone: "",
+    preferredBranch: "Rajbag, Pupri",
     currentGrade: "Class 5",
     targetCourse: "Navodaya (JNVST) Preparation",
     locality: "",
@@ -26,23 +27,22 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In static mode or SAS mode, this data can be sent to Google Forms / Formspree / Webhook
-    // For immediate utility, we provide WhatsApp dispatch and a success confirmation
     setIsSubmitted(true);
   };
 
   const handleWhatsAppDirect = () => {
     const text = encodeURIComponent(
-      `Hello North Point Pupri!\nI am interested in admission for my child.\n\n` +
+      `Hello North Point Children Academy!\nI am interested in admission for my child.\n\n` +
       `*Student Name:* ${formData.studentName || "N/A"}\n` +
       `*Parent Name:* ${formData.parentName || "N/A"}\n` +
       `*Phone:* ${formData.phone || "N/A"}\n` +
-      `*Wing:* ${wing === "school" ? "North Point School" : "North Point Premier Institute"}\n` +
+      `*Preferred Branch:* ${formData.preferredBranch}\n` +
+      `*Wing:* ${wing === "school" ? "North Point Children Academy (School)" : "North Point Career Institute"}\n` +
       `*Class/Course:* ${formData.currentGrade} - ${formData.targetCourse}\n` +
-      `*Location:* ${formData.locality || "Pupri / Sitamarhi area"}\n` +
+      `*Location:* ${formData.locality || "Pupri / Bahera Zahidpur / Sitamarhi area"}\n` +
       (formData.message ? `*Notes:* ${formData.message}` : "")
     );
-    window.open(`https://wa.me/919876543210?text=${text}`, "_blank");
+    window.open(`https://wa.me/918294407171?text=${text}`, "_blank");
   };
 
   return (
@@ -58,11 +58,11 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
             ✕
           </button>
           <div className="text-xs uppercase tracking-wider font-semibold text-amber-400 mb-1">
-            Admissions & Counseling Desk
+            Admissions &amp; Counseling Desk
           </div>
-          <h3 className="text-xl font-bold">North Point Pupri</h3>
+          <h3 className="text-xl font-bold">North Point Children Academy</h3>
           <p className="text-xs text-slate-300 mt-1">
-            Fill the form below or chat directly on WhatsApp for quick counselor callback.
+            Branches: Rajbag (Pupri) &amp; Bahera Zahidpur | Call: 8294407171
           </p>
 
           {/* Division Toggle inside modal */}
@@ -93,7 +93,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                   : "text-slate-200 hover:text-white"
               }`}
             >
-              🎯 Institute (Coaching)
+              🎯 Career Institute (Coaching)
             </button>
           </div>
         </div>
@@ -117,7 +117,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                   className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-sm transition-all shadow-md"
                 >
                   <WhatsAppIcon className="w-5 h-5" />
-                  Connect on WhatsApp Now
+                  Connect on WhatsApp (8294407171)
                 </button>
                 <button
                   type="button"
@@ -176,15 +176,16 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                 </div>
                 <div>
                   <label className="block text-xs font-medium text-slate-700 mb-1">
-                    Village / Town / Locality
+                    Select Branch
                   </label>
-                  <input
-                    type="text"
-                    placeholder="e.g. Pupri Bazar, Bajpatti, Janakpur Rd"
-                    value={formData.locality}
-                    onChange={(e) => setFormData({ ...formData, locality: e.target.value })}
-                    className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
-                  />
+                  <select
+                    value={formData.preferredBranch}
+                    onChange={(e) => setFormData({ ...formData, preferredBranch: e.target.value })}
+                    className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent bg-white font-medium"
+                  >
+                    <option value="Rajbag, Pupri">Branch 1: Rajbag, Pupri</option>
+                    <option value="Bahera Zahidpur (Nanpur)">Branch 2: Bahera Zahidpur (Nanpur)</option>
+                  </select>
                 </div>
               </div>
 
@@ -219,9 +220,9 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                       <>
                         <option value="Regular CBSE Schooling">Regular Schooling (English Medium)</option>
                         <option value="Navodaya (JNVST) Preparation">Navodaya Vidyalaya (JNVST) Preparation</option>
-                        <option value="Netarhat & Simultala Entrance">Netarhat & Simultala Awasiya Preparation</option>
+                        <option value="Netarhat & Simultala Entrance">Netarhat &amp; Simultala Awasiya Preparation</option>
                         <option value="Sainik School (AISSEE)">Sainik School (AISSEE) Wing</option>
-                        <option value="Olympiads (NSO/IMO) & NMMS">Olympiads (SOF) & NMMS Scholarship</option>
+                        <option value="Olympiads (NSO/IMO) & NMMS">Olympiads (SOF) &amp; NMMS Scholarship</option>
                       </>
                     ) : (
                       <>
@@ -239,11 +240,11 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
 
               <div>
                 <label className="block text-xs font-medium text-slate-700 mb-1">
-                  Any specific question or transport requirement?
+                  Village / Locality &amp; Transport Requirement
                 </label>
                 <textarea
                   rows={2}
-                  placeholder="Need school bus facility from my village, hostel query, fee enquiry, etc."
+                  placeholder="Your village name, need school bus route, hostel query, fee enquiry, etc."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
@@ -268,7 +269,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
               </div>
 
               <p className="text-[11px] text-slate-500 text-center">
-                🔒 Privacy guaranteed. Your contact details are only used for North Point Pupri admissions counseling.
+                🔒 Privacy guaranteed. Your contact details are only used for North Point Children Academy admissions counseling.
               </p>
             </form>
           )}

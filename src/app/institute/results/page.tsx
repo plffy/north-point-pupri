@@ -3,9 +3,9 @@ import Link from "next/link";
 import { TrophyIcon, SparklesIcon, CheckCircleIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "Results & Hall of Fame | North Point Career Institute Pupri",
+  title: "Results & Hall of Fame | North Point Children Academy Career Institute",
   description:
-    "Celebrating our students' top ranks and selections in IIT-JEE, NEET-UG, Navodaya, Simultala, and National Olympiads from Pupri, Bihar.",
+    "Celebrating our students' top ranks and selections in IIT-JEE, NEET-UG, Navodaya, Simultala, and National Olympiads from North Point Children Academy (Rajbag & Bahera Zahidpur).",
 };
 
 export default function InstituteResultsPage() {
@@ -77,7 +77,7 @@ export default function InstituteResultsPage() {
               </span>
               <h3 className="text-lg font-bold text-slate-900">JNVST &amp; Simultala Qualifiers</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Year after year, students from North Point Pupri crack the Jawahar Navodaya Vidyalaya Selection Test and Simultala Awasiya Vidyalaya with top district ranks.
+                Year after year, students from North Point Children Academy crack the Jawahar Navodaya Vidyalaya Selection Test and Simultala Awasiya Vidyalaya with top district ranks.
               </p>
             </div>
 
@@ -113,7 +113,7 @@ export default function InstituteResultsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 space-y-3">
               <p className="text-xs text-slate-300 italic leading-relaxed">
-                &ldquo;We were planning to send our son to a coaching center in Patna for Navodaya preparation. Enrolling him at North Point Pupri saved us heavy hostel expenses, and he cracked JNVST with flying colors! The daily OMR practice was crucial.&rdquo;
+                &ldquo;We were planning to send our son to a coaching center in Patna for Navodaya preparation. Enrolling him at North Point Children Academy saved us heavy hostel expenses, and he cracked JNVST with flying colors! The daily OMR practice was crucial.&rdquo;
               </p>
               <div className="text-xs font-bold text-amber-400">
                 — Parent of JNVST Qualifier (Pupri Bazar)
