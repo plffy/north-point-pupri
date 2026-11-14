@@ -61,9 +61,8 @@ export default function NoticeTicker() {
           onMouseLeave={() => setIsPaused(false)}
         >
           <div
-            className={`inline-flex items-center gap-8 ${
-              isPaused ? "" : "animate-[marquee_25s_linear_infinite]"
-            }`}
+            className="inline-flex items-center gap-8 animate-marquee"
+            style={{ animationPlayState: isPaused ? "paused" : "running" }}
           >
             {NOTICES.concat(NOTICES).map((item, idx) => (
               <span key={`${item.id}-${idx}`} className="inline-flex items-center gap-2 text-slate-200">

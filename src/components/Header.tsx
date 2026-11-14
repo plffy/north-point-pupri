@@ -63,7 +63,7 @@ export default function Header() {
       </div>
 
       {/* Main Sticky Header */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+      <header className="sticky top-0 z-40 bg-white shadow-sm border-b border-slate-200 [transform:translate3d(0,0,0)] [backface-visibility:hidden]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-20">
             {/* Logo and Brand Title - School Identity First */}
@@ -119,7 +119,7 @@ export default function Header() {
                 </button>
 
                 {aboutDropdownOpen && (
-                  <div className="absolute top-full left-0 w-60 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in-up">
+                  <div className="absolute top-full left-0 w-60 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in">
                     <Link
                       href="/about"
                       className="block px-4 py-2.5 text-xs hover:bg-slate-50 transition-colors"
@@ -159,7 +159,7 @@ export default function Header() {
                 </button>
 
                 {academicsDropdownOpen && (
-                  <div className="absolute top-full left-0 w-64 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in-up">
+                  <div className="absolute top-full left-0 w-64 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in">
                     <Link
                       href="/school/academics"
                       className="block px-4 py-2.5 text-xs hover:bg-slate-50 transition-colors"
@@ -206,7 +206,7 @@ export default function Header() {
                 </button>
 
                 {coachingDropdownOpen && (
-                  <div className="absolute top-full left-0 w-72 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in-up">
+                  <div className="absolute top-full left-0 w-72 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in">
                     <Link
                       href="/integrated-program"
                       className="block px-4 py-2.5 text-xs hover:bg-amber-50/60 transition-colors"
@@ -267,7 +267,7 @@ export default function Header() {
                 </button>
 
                 {admissionsDropdownOpen && (
-                  <div className="absolute top-full left-0 w-60 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in-up">
+                  <div className="absolute top-full left-0 w-60 bg-white rounded-xl shadow-xl border border-slate-100 py-2 animate-fade-in">
                     <Link
                       href="/school/admissions"
                       className="block px-4 py-2.5 text-xs hover:bg-slate-50 transition-colors"

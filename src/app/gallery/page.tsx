@@ -179,10 +179,10 @@ export default function GalleryPage() {
                 className={`h-48 sm:h-56 bg-gradient-to-tr ${item.gradient} p-6 flex flex-col justify-between text-white relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-300`}
               >
                 <div className="flex justify-between items-start">
-                  <span className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-xl shadow-inner">
+                  <span className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl shadow-inner">
                     {item.icon}
                   </span>
-                  <span className="text-[10px] uppercase font-bold tracking-wider bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-slate-200 border border-white/10">
+                  <span className="text-[10px] uppercase font-bold tracking-wider bg-black/50 px-2.5 py-1 rounded-full text-slate-200 border border-white/10">
                     {item.category}
                   </span>
                 </div>

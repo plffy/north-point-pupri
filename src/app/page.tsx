@@ -43,7 +43,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center max-w-4xl mx-auto space-y-6">
             {/* Pill Tag with Both Branches */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-amber-400/30 text-xs font-semibold text-amber-300 backdrop-blur-md shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-amber-400/30 text-xs font-semibold text-amber-300 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
               <span>Admissions Open 2025–26 • Campuses: Rajbag (Pupri) &amp; Bahera Zahidpur</span>
             </div>
@@ -81,7 +81,7 @@ export default function HomePage() {
               </Link>
               <button
                 onClick={() => setBrochureOpen(true)}
-                className="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm backdrop-blur-md border border-white/20 transition-all flex items-center gap-2"
+                className="px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/20 transition-all flex items-center gap-2"
               >
                 <span>Prospectus PDF</span>
                 <span className="text-xs">↓</span>
@@ -212,134 +212,146 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Cards Display */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Cards Display - Fixed Grid Stability, Zero Layout Shifts */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
             {/* Core Schooling Card */}
-            {(activeTab === "all" || activeTab === "school") && (
-              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 flex flex-col justify-between group">
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-indigo-900 bg-indigo-50 px-3 py-1 rounded-full">
-                      Pillar 1 • Core Schooling
-                    </span>
-                    <span className="text-2xl">🏫</span>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-slate-900 group-hover:text-indigo-900 transition-colors">
-                    North Point Children Academy
-                  </h3>
-
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    A vibrant learning ecosystem built on CBSE curriculum guidelines, digital smart classrooms, and experimental science labs across our <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur</strong> campuses. 
-                    Equipping students with strong moral foundations, English fluency, and sports.
-                  </p>
-
-                  <div className="space-y-2 pt-2 border-t border-slate-100">
-                    <div className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      Key Highlights:
-                    </div>
-                    <ul className="space-y-1.5 text-xs text-slate-600">
-                      <li className="flex items-center gap-2">
-                        <span className="text-indigo-600 font-bold">✓</span>
-                        <span>Foundational, Primary, Middle &amp; Secondary stages</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-indigo-600 font-bold">✓</span>
-                        <span>Audiovisual digital smart boards for conceptual clarity</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-indigo-600 font-bold">✓</span>
-                        <span>Science Olympiad Foundation (SOF) &amp; NMMS scholarship wings</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-indigo-600 font-bold">✓</span>
-                        <span>Safe transport buses connecting Pupri &amp; Nanpur with 20+ surrounding villages</span>
-                      </li>
-                    </ul>
-                  </div>
+            <div
+              className={`bg-white rounded-2xl p-6 sm:p-8 shadow-sm transition-all border flex flex-col justify-between group ${
+                activeTab === "school"
+                  ? "ring-2 ring-indigo-900 shadow-xl border-indigo-900 scale-[1.01]"
+                  : activeTab === "institute"
+                  ? "opacity-50 hover:opacity-100 border-slate-200"
+                  : "hover:shadow-xl border-slate-200"
+              }`}
+            >
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-indigo-900 bg-indigo-50 px-3 py-1 rounded-full">
+                    Pillar 1 • Core Schooling
+                  </span>
+                  <span className="text-2xl">🏫</span>
                 </div>
 
-                <div className="pt-6 flex flex-wrap items-center gap-3">
-                  <Link
-                    href="/school/academics"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-indigo-900 hover:bg-indigo-800 text-white text-xs font-semibold shadow-md transition-colors"
-                  >
-                    <span>Academic Curriculum</span>
-                    <ArrowRightIcon className="w-3.5 h-3.5" />
-                  </Link>
-                  <button
-                    onClick={() => openEnquiryModal("school")}
-                    className="px-4 py-2 rounded-xl border border-indigo-900 text-indigo-900 hover:bg-indigo-50 text-xs font-semibold transition-colors"
-                  >
-                    School Admission Guidelines
-                  </button>
+                <h3 className="text-2xl font-bold text-slate-900 group-hover:text-indigo-900 transition-colors">
+                  North Point Children Academy
+                </h3>
+
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  A vibrant learning ecosystem built on CBSE curriculum guidelines, digital smart classrooms, and experimental science labs across our <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur</strong> campuses. 
+                  Equipping students with strong moral foundations, English fluency, and sports.
+                </p>
+
+                <div className="space-y-2 pt-2 border-t border-slate-100">
+                  <div className="text-xs font-bold text-slate-800 uppercase tracking-wider">
+                    Key Highlights:
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-slate-600">
+                    <li className="flex items-center gap-2">
+                      <span className="text-indigo-600 font-bold">✓</span>
+                      <span>Foundational, Primary, Middle &amp; Secondary stages</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-indigo-600 font-bold">✓</span>
+                      <span>Audiovisual digital smart boards for conceptual clarity</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-indigo-600 font-bold">✓</span>
+                      <span>Science Olympiad Foundation (SOF) &amp; NMMS scholarship wings</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-indigo-600 font-bold">✓</span>
+                      <span>Safe transport buses connecting Pupri &amp; Nanpur with 20+ surrounding villages</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            )}
+
+              <div className="pt-6 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/school/academics"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-indigo-900 hover:bg-indigo-800 text-white text-xs font-semibold shadow-md transition-colors"
+                >
+                  <span>Academic Curriculum</span>
+                  <ArrowRightIcon className="w-3.5 h-3.5" />
+                </Link>
+                <button
+                  onClick={() => openEnquiryModal("school")}
+                  className="px-4 py-2 rounded-xl border border-indigo-900 text-indigo-900 hover:bg-indigo-50 text-xs font-semibold transition-colors"
+                >
+                  School Admission Guidelines
+                </button>
+              </div>
+            </div>
 
             {/* Integrated Coaching (ISP) Card */}
-            {(activeTab === "all" || activeTab === "institute") && (
-              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all border border-amber-300 flex flex-col justify-between group relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-amber-400/10 rounded-bl-full pointer-events-none"></div>
+            <div
+              className={`bg-white rounded-2xl p-6 sm:p-8 shadow-sm transition-all border flex flex-col justify-between group relative overflow-hidden ${
+                activeTab === "institute"
+                  ? "ring-2 ring-amber-500 shadow-xl border-amber-500 scale-[1.01]"
+                  : activeTab === "school"
+                  ? "opacity-50 hover:opacity-100 border-slate-200"
+                  : "hover:shadow-xl border-amber-300"
+              }`}
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-amber-400/10 rounded-bl-full pointer-events-none"></div>
 
-                <div className="space-y-4 relative z-10">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
-                      Pillar 2 • Integrated Program (ISP)
-                    </span>
-                    <span className="text-2xl">🎯</span>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
-                    Integrated Competitive Coaching
-                  </h3>
-
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Synchronized competitive coaching integrated directly into the school schedule. No evening rush or external tuition fatigue. Preparing students for India&apos;s most prestigious entrance exams.
-                  </p>
-
-                  <div className="space-y-2 pt-2 border-t border-slate-100">
-                    <div className="text-xs font-bold text-slate-800 uppercase tracking-wider">
-                      Integrated Entrance Streams:
-                    </div>
-                    <ul className="space-y-1.5 text-xs text-slate-600">
-                      <li className="flex items-center gap-2">
-                        <span className="text-amber-600 font-bold">✓</span>
-                        <span><strong>Junior Wing:</strong> Navodaya (JNVST), Netarhat, Simultala &amp; Sainik School (AISSEE)</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-amber-600 font-bold">✓</span>
-                        <span><strong>Senior Wing:</strong> IIT-JEE (Mains + Advanced) &amp; NEET-UG Medical foundation</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-amber-600 font-bold">✓</span>
-                        <span>Daily Practice Problems (DPP) &amp; bi-weekly OMR speed tests</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="text-amber-600 font-bold">✓</span>
-                        <span>SCAT Scholarship Exam with up to 100% tuition fee waiver</span>
-                      </li>
-                    </ul>
-                  </div>
+              <div className="space-y-4 relative z-10">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                    Pillar 2 • Integrated Program (ISP)
+                  </span>
+                  <span className="text-2xl">🎯</span>
                 </div>
 
-                <div className="pt-6 flex flex-wrap items-center gap-3 relative z-10">
-                  <Link
-                    href="/integrated-program"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold shadow-md transition-colors"
-                  >
-                    <span>How ISP Works</span>
-                    <ArrowRightIcon className="w-3.5 h-3.5" />
-                  </Link>
-                  <button
-                    onClick={() => openEnquiryModal("institute")}
-                    className="px-4 py-2 rounded-xl border border-amber-500 text-amber-800 hover:bg-amber-50 text-xs font-semibold transition-colors"
-                  >
-                    Register for SCAT Test
-                  </button>
+                <h3 className="text-2xl font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
+                  Integrated Competitive Coaching
+                </h3>
+
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Synchronized competitive coaching integrated directly into the school schedule. No evening rush or external tuition fatigue. Preparing students for India&apos;s most prestigious entrance exams.
+                </p>
+
+                <div className="space-y-2 pt-2 border-t border-slate-100">
+                  <div className="text-xs font-bold text-slate-800 uppercase tracking-wider">
+                    Integrated Entrance Streams:
+                  </div>
+                  <ul className="space-y-1.5 text-xs text-slate-600">
+                    <li className="flex items-center gap-2">
+                      <span className="text-amber-600 font-bold">✓</span>
+                      <span><strong>Junior Wing:</strong> Navodaya (JNVST), Netarhat, Simultala &amp; Sainik School (AISSEE)</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-amber-600 font-bold">✓</span>
+                      <span><strong>Senior Wing:</strong> IIT-JEE (Mains + Advanced) &amp; NEET-UG Medical foundation</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-amber-600 font-bold">✓</span>
+                      <span>Daily Practice Problems (DPP) &amp; bi-weekly OMR speed tests</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="text-amber-600 font-bold">✓</span>
+                      <span>SCAT Scholarship Exam with up to 100% tuition fee waiver</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            )}
+
+              <div className="pt-6 flex flex-wrap items-center gap-3 relative z-10">
+                <Link
+                  href="/integrated-program"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold shadow-md transition-colors"
+                >
+                  <span>How ISP Works</span>
+                  <ArrowRightIcon className="w-3.5 h-3.5" />
+                </Link>
+                <button
+                  onClick={() => openEnquiryModal("institute")}
+                  className="px-4 py-2 rounded-xl border border-amber-500 text-amber-800 hover:bg-amber-50 text-xs font-semibold transition-colors"
+                >
+                  Register for SCAT Test
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -539,7 +551,7 @@ export default function HomePage() {
                   <span className="bg-amber-400 text-slate-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     Morning Assembly
                   </span>
-                  <span className="bg-white/10 backdrop-blur-md text-[10px] font-medium text-slate-200 px-2 py-0.5 rounded">
+                  <span className="bg-black/40 text-[10px] font-medium text-slate-100 px-2 py-0.5 rounded border border-white/10">
                     Rajbag, Pupri
                   </span>
                 </div>
@@ -583,7 +595,7 @@ export default function HomePage() {
                   <span className="bg-sky-400 text-slate-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     Smart Class
                   </span>
-                  <span className="bg-white/10 backdrop-blur-md text-[10px] font-medium text-slate-200 px-2 py-0.5 rounded">
+                  <span className="bg-black/40 text-[10px] font-medium text-slate-100 px-2 py-0.5 rounded border border-white/10">
                     Bahera Zahidpur
                   </span>
                 </div>
@@ -626,7 +638,7 @@ export default function HomePage() {
                   <span className="bg-emerald-400 text-slate-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     Science Lab
                   </span>
-                  <span className="bg-white/10 backdrop-blur-md text-[10px] font-medium text-slate-200 px-2 py-0.5 rounded">
+                  <span className="bg-black/40 text-[10px] font-medium text-slate-100 px-2 py-0.5 rounded border border-white/10">
                     Both Campuses
                   </span>
                 </div>
@@ -669,7 +681,7 @@ export default function HomePage() {
                   <span className="bg-amber-400 text-slate-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     JNVST &amp; SCAT
                   </span>
-                  <span className="bg-white/10 backdrop-blur-md text-[10px] font-medium text-slate-200 px-2 py-0.5 rounded">
+                  <span className="bg-black/40 text-[10px] font-medium text-slate-100 px-2 py-0.5 rounded border border-white/10">
                     Competitive Wing
                   </span>
                 </div>
@@ -712,7 +724,7 @@ export default function HomePage() {
                   <span className="bg-orange-400 text-slate-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     Sports Arena
                   </span>
-                  <span className="bg-white/10 backdrop-blur-md text-[10px] font-medium text-slate-200 px-2 py-0.5 rounded">
+                  <span className="bg-black/40 text-[10px] font-medium text-slate-100 px-2 py-0.5 rounded border border-white/10">
                     Playground
                   </span>
                 </div>
@@ -755,7 +767,7 @@ export default function HomePage() {
                   <span className="bg-rose-400 text-slate-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
                     Annual Honors
                   </span>
-                  <span className="bg-white/10 backdrop-blur-md text-[10px] font-medium text-slate-200 px-2 py-0.5 rounded">
+                  <span className="bg-black/40 text-[10px] font-medium text-slate-100 px-2 py-0.5 rounded border border-white/10">
                     Auditorium
                   </span>
                 </div>

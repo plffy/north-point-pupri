@@ -46,7 +46,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 animate-fade-in">
       <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 relative animate-fade-in-up">
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-900 to-indigo-900 text-white p-5 relative">
