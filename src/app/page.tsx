@@ -105,20 +105,20 @@ const HOME_PHOTO_ITEMS: HomePhotoItem[] = [
     alt: "Child Protection Campaign at North Point Children Academy",
   },
   {
-    id: "chairman",
+    id: "rangoli",
     category: "students",
-    badgeEn: "Leadership Desk",
-    badgeHi: "संस्थापक कक्ष",
+    badgeEn: "Creative Arts",
+    badgeHi: "सृजनात्मक कला",
     badgeColor: "bg-indigo-900 text-amber-300",
-    topRightTag: "शिक्षा सेवा सम्मान",
-    image: "/images/leadership/chairman-ashok-kumar-thakur.jpg",
-    titleEn: "Founder & Chairman Desk (Ashok Kumar Thakur)",
-    titleHi: "संस्थापक एवं चेयरमैन कक्ष (अशोक कुमार ठाकुर)",
-    descEn: "Founder Ashok Kumar Thakur at his administrative office with his prestigious Shiksha Sewa Samman honor.",
-    descHi: "शिक्षा सेवा सम्मान से अलंकृत संस्थापक श्री अशोक कुमार ठाकुर अपने कार्यालय कक्ष में विद्यार्थियों के उज्ज्वल भविष्य की योजना बनाते हुए।",
-    tagEn: "Visionary Mentorship",
-    tagHi: "प्रेरणादायी नेतृत्व",
-    alt: "Founder and Chairman Ashok Kumar Thakur at North Point Children Academy",
+    topRightTag: "दीपावली व उत्सव",
+    image: "/images/campus/students-art-rangoli.jpg",
+    titleEn: "Student Cultural Art & Festive Rangoli Competition",
+    titleHi: "विद्यार्थी सांस्कृतिक कला एवं रंगोली प्रतियोगिता",
+    descEn: "Fostering Indian cultural traditions, collaborative teamwork, and aesthetic expression through campus art and festive events.",
+    descHi: "भारतीय सांस्कृतिक मूल्यों, सहयोगात्मक टीम भावना और कलात्मक अभिव्यक्ति को प्रोत्साहित करती विद्यालय स्तरीय रंगोली प्रतियोगिता।",
+    tagEn: "Cultural & Arts",
+    tagHi: "सांस्कृतिक कला",
+    alt: "Students Rangoli and Cultural Competition at North Point Children Academy",
   },
 ];
 
@@ -513,12 +513,18 @@ export default function Home() {
             {/* Leader 1: Ashok Kumar Thakur */}
             <div className="bg-white rounded-2xl p-6 border-2 border-amber-300 shadow-sm hover:shadow-xl hover:border-amber-400 flex flex-col justify-between transition-all group">
               <div>
-                <div className="h-64 sm:h-72 w-full rounded-xl overflow-hidden mb-5 bg-slate-900 relative border border-amber-200 shadow">
-                  <img
-                    src="/images/leadership/chairman-ashok-kumar-thakur.jpg"
-                    alt={dict.chairmanName}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  />
+                <div className="h-64 sm:h-72 w-full rounded-xl overflow-hidden mb-5 bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 flex items-center justify-center relative border border-amber-300 shadow">
+                  <div className="text-center p-4">
+                    <div className="w-20 h-20 mx-auto rounded-full bg-amber-400/20 border-2 border-amber-400 flex items-center justify-center text-3xl text-amber-300 mb-3">
+                      👨‍💼
+                    </div>
+                    <span className="text-xs text-amber-300 font-bold uppercase tracking-wider block">
+                      {dict.chairmanRole}
+                    </span>
+                    <span className="text-[10px] text-slate-300 mt-1 block">
+                      {language === "hi" ? "आधिकारिक चित्र शीघ्र अपडेट होगा" : "Official Portrait Updating Soon"}
+                    </span>
+                  </div>
                   <div className="absolute top-2 left-2 bg-amber-400 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded shadow">
                     {dict.chairmanDesk}
                   </div>
@@ -553,12 +559,18 @@ export default function Home() {
             {/* Leader 2: Arvind Ujjwal */}
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:border-indigo-300 flex flex-col justify-between transition-all group">
               <div>
-                <div className="h-64 sm:h-72 w-full rounded-xl overflow-hidden mb-5 bg-slate-900 relative border border-slate-200 shadow">
-                  <img
-                    src="/images/leadership/director-arvind-ujjwal.jpg"
-                    alt={dict.directorName}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  />
+                <div className="h-64 sm:h-72 w-full rounded-xl overflow-hidden mb-5 bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 flex items-center justify-center relative border border-indigo-300 shadow">
+                  <div className="text-center p-4">
+                    <div className="w-20 h-20 mx-auto rounded-full bg-indigo-500/20 border-2 border-indigo-400 flex items-center justify-center text-3xl text-indigo-300 mb-3">
+                      🎓
+                    </div>
+                    <span className="text-xs text-indigo-300 font-bold uppercase tracking-wider block">
+                      {dict.directorRole}
+                    </span>
+                    <span className="text-[10px] text-slate-300 mt-1 block">
+                      {language === "hi" ? "आधिकारिक चित्र शीघ्र अपडेट होगा" : "Official Portrait Updating Soon"}
+                    </span>
+                  </div>
                   <div className="absolute top-2 left-2 bg-indigo-900 text-white text-[10px] font-black px-2 py-0.5 rounded shadow">
                     {dict.directorDesk}
                   </div>

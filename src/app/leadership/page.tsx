@@ -67,17 +67,19 @@ export default function LeadershipPage() {
         {/* 1. Ashok Kumar Thakur - Founder & Chairman */}
         <div id="chairman" className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-gradient-to-br from-slate-50 via-white to-amber-50/40 p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
           <div className="lg:col-span-5 flex flex-col items-center text-center">
-            {/* Executive Portrait Card - Real Photo */}
+            {/* Executive Portrait Card */}
             <div className="relative group">
               <div className="w-60 h-72 sm:w-64 sm:h-80 rounded-2xl bg-gradient-to-b from-indigo-950 via-slate-900 to-indigo-900 p-1.5 shadow-2xl relative overflow-hidden border-2 border-amber-400/60">
-                <div className="w-full h-full rounded-xl overflow-hidden relative bg-slate-950">
-                  <img
-                    src="/images/leadership/chairman-ashok-kumar-thakur.jpg"
-                    alt="Ashok Kumar Thakur - Founder & Chairman"
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-                  <div className="absolute bottom-2.5 left-2 right-2 text-center">
+                <div className="w-full h-full rounded-xl bg-gradient-to-t from-slate-950 via-indigo-950/90 to-slate-800 flex flex-col items-center justify-center p-4 relative">
+                  <div className="w-24 h-24 rounded-full bg-amber-400/20 border-2 border-amber-300 flex items-center justify-center text-amber-300 shadow-inner mb-3">
+                    <svg className="w-14 h-14" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                  </div>
+                  <span className="text-white font-bold text-sm text-center">Ashok Kumar Thakur</span>
+                  <span className="text-amber-300 text-xs font-semibold mt-0.5">Founder &amp; Chairman</span>
+                  <span className="text-[10px] text-slate-300 mt-2 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">Official Portrait Updating Soon</span>
+                  <div className="absolute bottom-2 left-2 right-2 text-center">
                     <span className="text-[10px] bg-amber-400 text-slate-950 font-extrabold px-2 py-0.5 rounded shadow">
                       शिक्षा सेवा सम्मान
                     </span>
@@ -176,16 +178,18 @@ export default function LeadershipPage() {
           </div>
 
           <div className="lg:col-span-5 flex flex-col items-center text-center order-1 lg:order-2">
-            {/* Executive Portrait Card - Real Photo */}
+            {/* Executive Portrait Card */}
             <div className="relative group">
               <div className="w-60 h-72 sm:w-64 sm:h-80 rounded-2xl bg-gradient-to-b from-indigo-950 via-slate-900 to-indigo-900 p-1.5 shadow-2xl relative overflow-hidden border-2 border-indigo-400/60">
-                <div className="w-full h-full rounded-xl overflow-hidden relative bg-slate-950">
-                  <img
-                    src="/images/leadership/director-arvind-ujjwal.jpg"
-                    alt="Arvind Ujjwal - Managing Director"
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                <div className="w-full h-full rounded-xl bg-gradient-to-t from-slate-950 via-indigo-950/90 to-slate-800 flex flex-col items-center justify-center p-4 relative">
+                  <div className="w-24 h-24 rounded-full bg-indigo-500/20 border-2 border-indigo-300 flex items-center justify-center text-indigo-200 shadow-inner mb-3">
+                    <svg className="w-14 h-14" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                  </div>
+                  <span className="text-white font-bold text-sm text-center">Arvind Ujjwal</span>
+                  <span className="text-indigo-300 text-xs font-semibold mt-0.5">Managing Director</span>
+                  <span className="text-[10px] text-slate-300 mt-2 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">Official Portrait Updating Soon</span>
                   <div className="absolute bottom-2.5 left-2 right-2 text-center">
                     <span className="text-[10px] bg-indigo-600 text-white font-extrabold px-2 py-0.5 rounded shadow">
                       Managing Director
