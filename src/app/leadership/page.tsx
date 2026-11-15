@@ -16,7 +16,7 @@ import {
 export const metadata = {
   title: "Leadership & Founders | North Point Children Academy",
   description:
-    "Meet the visionary leadership team at North Point Children Academy: Ashok Kumar Thakur (Founder & Chairman), Arvind Ujjwal (Managing Director), and Aparna Thakur (Principal). Operating campuses at Rajbag, Pupri and Bahera Zahidpur, Sitamarhi.",
+    "Meet the visionary leadership team at North Point Children Academy: Ashok Kumar Thakur (Founder & Chairman), Arvind Ujjwal (Managing Director), and Aparna Satyam (Principal). Operating campuses at Rajbag, Pupri and Bahera Zahidpur, Sitamarhi.",
 };
 
 export default function LeadershipPage() {
@@ -216,7 +216,7 @@ export default function LeadershipPage() {
           </div>
         </div>
 
-        {/* 3. Aparna Thakur - Principal & Academic Coordinator */}
+        {/* 3. Aparna Satyam - Principal & Academic Coordinator */}
         <div id="principal" className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center bg-gradient-to-br from-emerald-50/40 via-white to-slate-50 p-8 sm:p-12 rounded-3xl border border-emerald-100 shadow-sm hover:shadow-md transition-all">
           <div className="lg:col-span-5 flex flex-col items-center text-center">
             {/* Dummy Photo / Executive Portrait Card */}
@@ -228,7 +228,7 @@ export default function LeadershipPage() {
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                     </svg>
                   </div>
-                  <span className="text-white font-bold text-sm text-center">Aparna Thakur</span>
+                  <span className="text-white font-bold text-sm text-center">Aparna Satyam</span>
                   <span className="text-emerald-300 text-xs font-semibold mt-0.5">Principal</span>
                   <span className="text-[10px] text-slate-300 mt-1 bg-white/10 px-2 py-0.5 rounded">Student Welfare &amp; Academics</span>
                 </div>
@@ -240,7 +240,7 @@ export default function LeadershipPage() {
 
             <div className="mt-6 text-center">
               <h3 className="text-xl sm:text-2xl font-black text-slate-900">
-                Aparna Thakur
+                Aparna Satyam
               </h3>
               <p className="text-xs sm:text-sm font-bold text-emerald-800 mt-0.5">
                 Principal, North Point Children Academy

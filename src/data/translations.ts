@@ -228,7 +228,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     directorMessage:
       "Education is not merely preparing for terminal exams; it is about building unstoppable character and self-reliance. Our Integrated School Program ends the exhaustion of dual tuition schedules, preparing our students for national competitions right here in Pupri.",
     principalRole: "Principal & Head of Academics",
-    principalName: "Aparna Thakur",
+    principalName: "Aparna Satyam",
     principalDesk: "Academic Desk",
     principalMessage:
       "Every child possesses a unique spark. At North Point Children Academy, we combine loving maternal care with strict academic discipline, smart classrooms, and personalized attention to nurture tomorrow's toppers.",
@@ -373,7 +373,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     directorMessage:
       "शिक्षा केवल परीक्षा पास करने का साधन नहीं, बल्कि चरित्र निर्माण और स्वावलंबन का आधार है। हमारे इंटीग्रेटेड स्कूल प्रोग्राम (ISP) ने छात्रों को दोहरे ट्यूशन की थकान से मुक्ति दिलाकर राष्ट्रीय प्रतियोगिताओं के लिए यहीं पुपरी में तैयार किया है।",
     principalRole: "प्रधानाचार्या एवं शैक्षणिक प्रमुख",
-    principalName: "अपर्णा ठाकुर",
+    principalName: "अपर्णा सत्यम",
     principalDesk: "प्रधानाचार्य डेस्क",
     principalMessage:
       "प्रत्येक बालक में असीम प्रतिभा निहित होती है। नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी में हम मातृवत स्नेह, कठोर शैक्षणिक अनुशासन, स्मार्ट कक्षाओं और व्यक्तिगत मार्गदर्शन से बच्चों के भविष्य को उज्ज्वल बनाते हैं।",

@@ -253,7 +253,7 @@ export default function AboutPage() {
                 Meet the Visionaries Leading North Point Children Academy
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Guided by <strong>Ashok Kumar Thakur</strong> (Founder &amp; Chairman), <strong>Arvind Ujjwal</strong> (Managing Director), and <strong>Aparna Thakur</strong> (Principal). Together they steer our academic standards, student welfare, and competitive coaching excellence across Pupri and Bahera Zahidpur.
+                Guided by <strong>Ashok Kumar Thakur</strong> (Founder &amp; Chairman), <strong>Arvind Ujjwal</strong> (Managing Director), and <strong>Aparna Satyam</strong> (Principal). Together they steer our academic standards, student welfare, and competitive coaching excellence across Pupri and Bahera Zahidpur.
               </p>
               <div className="pt-2">
                 <Link

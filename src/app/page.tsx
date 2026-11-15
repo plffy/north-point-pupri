@@ -601,7 +601,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Leader 3: Aparna Thakur */}
+            {/* Leader 3: Aparna Satyam */}
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:border-indigo-300 flex flex-col justify-between transition-all group">
               <div>
                 <div className="h-64 sm:h-72 w-full rounded-xl overflow-hidden mb-5 bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 flex items-center justify-center relative border border-slate-200 shadow">
