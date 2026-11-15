@@ -112,7 +112,7 @@ img, video {
 .animate-marquee {
   display: inline-flex;
   will-change: transform;
-  animation: marquee 30s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 
 .animate-fade-in-up {
