@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { DownloadIcon, CheckCircleIcon, WhatsAppIcon } from "./Icons";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface BrochureModalProps {
   isOpen: boolean;
@@ -9,6 +10,7 @@ interface BrochureModalProps {
 }
 
 export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
+  const { language } = useLanguage();
   const [phone, setPhone] = useState("");
   const [branch, setBranch] = useState("Rajbag, Pupri");
   const [isDownloaded, setIsDownloaded] = useState(false);
@@ -22,7 +24,7 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 animate-fade-in">
-      <div className="bg-white rounded-2xl max-w-md w-full overflow-hidden shadow-2xl border border-slate-200 relative animate-fade-in-up">
+      <div className="bg-white rounded-2xl max-w-md w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-200 relative animate-fade-in-up">
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-900 to-indigo-950 text-white p-5 relative">
           <button
@@ -32,11 +34,15 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
             ✕
           </button>
           <div className="text-xs uppercase tracking-wider font-semibold text-amber-400 mb-1">
-            Information Prospectus 2025–26
+            {language === "hi" ? "आधिकारिक विद्यालय प्रॉस्पेक्टस 2025–26" : "Official School Prospectus 2025–26"}
           </div>
-          <h3 className="text-lg font-bold">North Point Children Academy</h3>
+          <h3 className="text-lg font-bold">
+            {language === "hi" ? "नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी" : "North Point Children Academy"}
+          </h3>
           <p className="text-xs text-slate-300 mt-1">
-            Rajbag (Pupri) &amp; Bahera Zahidpur Campuses | Mob: 8294407171
+            {language === "hi"
+              ? "राजबाग (पुपरी) एवं बहेरा जाहिदपुर परिसर | मो: 8294407171"
+              : "Rajbag (Pupri) & Bahera Zahidpur Campuses | Mob: 8294407171"}
           </p>
         </div>
 
@@ -46,14 +52,14 @@ export default function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
               <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-3">
                 <CheckCircleIcon className="w-8 h-8" />
               </div>
-              <h4 className="text-lg font-bold text-slate-900">Prospectus Access Granted!</h4>
+              <h4 className="text-lg font-bold text-slate-900">Prospectus Access Ready!</h4>
               <p className="text-xs text-slate-600 mt-2">
-                A digital prospectus has been prepared. You can also receive our complete fee structure and exam syllabus directly on WhatsApp.
+                Our official school prospectus covers campus facilities, smart classrooms, laboratories, and curriculum details. You can also receive it directly on WhatsApp.
               </p>
               <div className="mt-5 space-y-2">
                 <a
                   href={`https://wa.me/918294407171?text=${encodeURIComponent(
-                    `Hello North Point Children Academy, please send me the complete Prospectus PDF & Fee Structure for ${branch}.`
+                    `Hello North Point Children Academy, please send me the complete Prospectus PDF for ${branch}.`
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"

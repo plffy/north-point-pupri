@@ -8,82 +8,108 @@ interface GalleryItem {
   category: "all" | "campus" | "academics" | "events" | "sports";
   title: string;
   desc: string;
-  gradient: string;
+  image?: string;
+  gradient?: string;
   icon: string;
+  badge?: string;
 }
 
 const GALLERY_ITEMS: GalleryItem[] = [
   {
+    id: "0",
+    category: "campus",
+    title: "Multi-Story School Campus & Building Facade",
+    desc: "Main school campus at Pupri featuring arched architectural windows, entrance gate, and rooftop Hindi signboard 'नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी'.",
+    image: "/images/campus/school-building-facade.jpg",
+    icon: "🏫",
+    badge: "Campus Facade",
+  },
+  {
     id: "1",
     category: "campus",
-    title: "Main Campus & Administrative Wing",
-    desc: "Spacious entrance with green lawns and assembly arena.",
-    gradient: "from-blue-600 via-indigo-700 to-slate-900",
+    title: "Official Campus Entrance & Trust Signboard",
+    desc: "S.K. Thakur Memorial Educational Trust registration, Gov. affiliation, faculty, leadership and Eco Club students at Rajbag.",
+    image: "/images/campus/school-entrance-signboard.jpg",
     icon: "🏫",
+    badge: "Trust Signboard",
   },
   {
     id: "2",
-    category: "academics",
-    title: "Digital Smart Classroom in Session",
-    desc: "Interactive visual learning boards in middle school class.",
-    gradient: "from-indigo-600 via-purple-700 to-slate-900",
-    icon: "💻",
+    category: "events",
+    title: "Independence Day Prize Distribution & Star Trophy",
+    desc: "Flag hoisting celebration and student star trophy felicitation on campus with official school celebration banner.",
+    image: "/images/campus/independence-day-prize-distribution.jpg",
+    icon: "🏆",
+    badge: "Annual Honors",
   },
   {
     id: "3",
+    category: "events",
+    title: "Child Safety Campaign (सुरक्षित बचपन अभियान)",
+    desc: "Awareness drive on student protection, discipline, and emotional well-being led by teachers and senior pupils.",
+    image: "/images/campus/child-safety-campaign.jpg",
+    icon: "🛡️",
+    badge: "Official Campaign",
+  },
+  {
+    id: "4",
+    category: "events",
+    title: "Patriotic Art & Rangoli Exhibition",
+    desc: "School corridor exhibition featuring hand-drawn Indian maps, national emblems, and colorful floral Rangoli.",
+    image: "/images/campus/students-art-rangoli.jpg",
+    icon: "🇮🇳",
+    badge: "Student Artwork",
+  },
+  {
+    id: "5",
     category: "academics",
-    title: "Composite Science & STEM Laboratory",
-    desc: "Students performing physics and chemistry practical demonstrations.",
+    title: "Junior Scholars in School Uniform",
+    desc: "Primary school students proudly wearing school uniforms, badges, and displaying positive spirit.",
+    image: "/images/campus/primary-students-uniform.jpg",
+    icon: "🎒",
+    badge: "Students Life",
+  },
+  {
+    id: "6",
+    category: "academics",
+    title: "Classroom Engagement & Creative Studies",
+    desc: "Interactive learning environment fostering peer collaboration, conceptual arts, and academic focus.",
+    image: "/images/campus/students-rangoli-study.jpg",
+    icon: "📖",
+    badge: "Classroom",
+  },
+  {
+    id: "7",
+    category: "academics",
+    title: "Composite Science & STEM Experiments",
+    desc: "Hands-on physics and chemistry demonstrations building practical scientific temper from Class 6 onwards.",
     gradient: "from-emerald-600 via-teal-700 to-slate-900",
     icon: "🔬",
   },
   {
-    id: "4",
+    id: "8",
     category: "sports",
-    title: "Annual Sports Day Championship",
-    desc: "Sprint races, relay events, and cricket tournament finals.",
+    title: "Annual Sports Day & Athletics",
+    desc: "Sprint races, relay events, kho-kho, and cricket tournament fostering sportsmanship and physical vigor.",
     gradient: "from-amber-500 via-orange-600 to-slate-900",
     icon: "🏃",
   },
   {
-    id: "5",
-    category: "events",
-    title: "Republic Day & Cultural Fest Celebration",
-    desc: "Flag hoisting, patriotic songs, and traditional dance performances.",
-    gradient: "from-rose-600 via-pink-700 to-slate-900",
-    icon: "🇮🇳",
-  },
-  {
-    id: "6",
+    id: "9",
     category: "campus",
     title: "Rich Library & Quiet Reading Arena",
-    desc: "Over 2,500 titles, NCERT exemplars, and competitive guides.",
+    desc: "Over 2,500 titles, NCERT exemplars, mental ability workbooks, and competitive test series references.",
     gradient: "from-cyan-600 via-blue-700 to-slate-900",
     icon: "📚",
   },
   {
-    id: "7",
-    category: "events",
-    title: "Science Exhibition & Model Showcase",
-    desc: "Working models on solar irrigation, hydraulics, and green energy.",
-    gradient: "from-violet-600 via-indigo-700 to-slate-900",
-    icon: "⚡",
-  },
-  {
-    id: "8",
-    category: "sports",
-    title: "Morning Yoga & Karate Drill",
-    desc: "Holistic fitness, self-defense basics, and concentration exercises.",
-    gradient: "from-teal-600 via-emerald-700 to-slate-900",
-    icon: "🧘",
-  },
-  {
-    id: "9",
+    id: "10",
     category: "academics",
-    title: "Navodaya & Olympiad Special Batch",
-    desc: "Intensive OMR mock test practice and shortcut sessions.",
+    title: "Navodaya & Netarhat Specialized Batches",
+    desc: "Intensive OMR mock test practice, mental reasoning drills, and shortcut problem solving for competitive exams.",
     gradient: "from-slate-700 via-indigo-900 to-slate-950",
     icon: "📝",
+    badge: "Coaching Wing",
   },
 ];
 
@@ -174,22 +200,63 @@ export default function GalleryPage() {
               key={item.id}
               className="group rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl transition-all flex flex-col justify-between"
             >
-              {/* Graphic Placeholder representing actual campus photo */}
-              <div
-                className={`h-48 sm:h-56 bg-gradient-to-tr ${item.gradient} p-6 flex flex-col justify-between text-white relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-300`}
-              >
-                <div className="flex justify-between items-start">
-                  <span className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl shadow-inner">
-                    {item.icon}
-                  </span>
-                  <span className="text-[10px] uppercase font-bold tracking-wider bg-black/50 px-2.5 py-1 rounded-full text-slate-200 border border-white/10">
-                    {item.category}
-                  </span>
-                </div>
-                <div>
-                  <span className="text-xs text-amber-300 font-semibold">North Point Pupri</span>
-                  <h3 className="text-base font-bold text-white leading-snug">{item.title}</h3>
-                </div>
+              {/* Image or Graphic Block */}
+              <div className="h-52 sm:h-60 relative overflow-hidden bg-slate-900">
+                {item.image ? (
+                  <>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                    <div className="absolute top-3 left-3 right-3 flex justify-between items-start z-10">
+                      <span className="w-9 h-9 rounded-xl bg-slate-950/70 border border-white/20 text-white flex items-center justify-center text-lg shadow-md backdrop-blur-none">
+                        {item.icon}
+                      </span>
+                      <div className="flex items-center gap-1.5">
+                        {item.badge && (
+                          <span className="text-[10px] uppercase font-extrabold tracking-wider bg-amber-400 text-slate-950 px-2.5 py-1 rounded-full shadow-sm">
+                            {item.badge}
+                          </span>
+                        )}
+                        <span className="text-[10px] uppercase font-bold tracking-wider bg-slate-900/80 px-2.5 py-1 rounded-full text-slate-200 border border-white/10">
+                          {item.category}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="absolute bottom-3 left-3 right-3 z-10">
+                      <span className="text-[10px] text-amber-300 font-bold uppercase tracking-wider block">
+                        North Point Children Academy
+                      </span>
+                      <h3 className="text-sm sm:text-base font-bold text-white leading-snug drop-shadow-sm">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </>
+                ) : (
+                  <div
+                    className={`w-full h-full bg-gradient-to-tr ${item.gradient || "from-indigo-950 to-slate-900"} p-5 flex flex-col justify-between text-white relative`}
+                  >
+                    <div className="flex justify-between items-start">
+                      <span className="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center text-lg shadow-inner">
+                        {item.icon}
+                      </span>
+                      <span className="text-[10px] uppercase font-bold tracking-wider bg-black/50 px-2.5 py-1 rounded-full text-slate-200 border border-white/10">
+                        {item.category}
+                      </span>
+                    </div>
+                    <div>
+                      <span className="text-[10px] text-amber-300 font-bold uppercase tracking-wider block">
+                        North Point Children Academy
+                      </span>
+                      <h3 className="text-sm sm:text-base font-bold text-white leading-snug">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Caption */}

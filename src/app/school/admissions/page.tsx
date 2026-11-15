@@ -83,7 +83,7 @@ export default function SchoolAdmissionsPage() {
               </div>
               <h3 className="text-base font-bold text-slate-900">Admission Confirmation</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Fee deposit, issuance of student ID, school uniform specifications, booklist collection, and bus route allocation.
+                Enrollment completion, issuance of student ID, school uniform specifications, booklist collection, and transport route allocation.
               </p>
             </div>
           </div>
@@ -152,40 +152,73 @@ export default function SchoolAdmissionsPage() {
           </div>
         </section>
 
-        {/* Transparent Fee Policy & Scholarships */}
-        <section className="border border-slate-200 rounded-3xl p-8 sm:p-12 space-y-6">
-          <div className="max-w-2xl">
-            <span className="text-xs font-bold uppercase text-indigo-900 tracking-wider">Fee Structure &amp; Concessions</span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-              Affordable, No-Hidden-Cost Fee Model
+        {/* Official School Prospectus & Campus Facilities */}
+        <section id="prospectus" className="border border-slate-200 rounded-3xl p-8 sm:p-12 space-y-8 bg-gradient-to-br from-slate-50 via-white to-amber-50/20">
+          <div className="max-w-3xl">
+            <span className="text-xs font-bold uppercase text-indigo-900 tracking-wider bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">
+              Official School Prospectus
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
+              Comprehensive Campus Facilities &amp; Academic Prospectus
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              We believe quality English-medium education should be within the reach of hardworking families in Bihar.
+            <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              We publish one comprehensive, unified Prospectus covering our CBSE curriculum framework, smart classroom infrastructure, composite STEM laboratories, sports facilities, and integrated competitive preparation across both campuses at <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong>.
             </p>
           </div>
 
+          {/* Key Facility Highlights in the Prospectus */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-              <h3 className="font-bold text-slate-900 text-sm">Flexible Installments</h3>
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-indigo-900/10 text-indigo-900 flex items-center justify-center font-bold text-lg">
+                💻
+              </div>
+              <h3 className="font-bold text-slate-900 text-sm">Smart Classrooms &amp; STEM Labs</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Fees can be deposited quarterly or monthly without penalty, making it hassle-free for parents with agricultural or seasonal incomes.
+                Visual audio-visual classrooms, computer lab, and practical demonstration equipment building strong scientific concepts from early grades.
               </p>
             </div>
-            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-              <h3 className="font-bold text-slate-900 text-sm">Sibling Concession</h3>
+
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-700 flex items-center justify-center font-bold text-lg">
+                🚌
+              </div>
+              <h3 className="font-bold text-slate-900 text-sm">Dedicated Bus Transport Fleet</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Special 15% tuition fee waiver for the younger sibling when two or more children from the same family are enrolled.
+                Safe, disciplined bus and van network covering 20+ rural stops across Pupri, Janakpur Road, Bahera Zahidpur, and Nanpur blocks.
               </p>
             </div>
-            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-              <h3 className="font-bold text-slate-900 text-sm">Merit Scholarships</h3>
+
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-700 flex items-center justify-center font-bold text-lg">
+                🎯
+              </div>
+              <h3 className="font-bold text-slate-900 text-sm">Integrated Competitive Wing</h3>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Up to 100% scholarship for top performers in our annual diagnostic test and for girl children from economically weaker backgrounds.
+                Specialized in-school coaching for Navodaya (JNVST), Netarhat, Simultala, and foundation for IIT-JEE &amp; NEET under one unified campus schedule.
               </p>
             </div>
           </div>
 
-          <div className="pt-4 flex flex-wrap gap-4">
+          {/* Transparent Counselling Policy Notice */}
+          <div className="p-5 rounded-2xl bg-amber-500/10 border border-amber-400/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="space-y-1">
+              <h4 className="text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-1.5">
+                <span className="text-amber-600">ℹ️</span>
+                <span>Personalized Admission Counselling &amp; Fee Details</span>
+              </h4>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                Detailed fee structures and admission formalities are discussed directly with parents upon registration and enquiry with our counseling team. Visit the school office or contact our helpline at <strong>8294407171</strong>.
+              </p>
+            </div>
+            <a
+              href="tel:+918294407171"
+              className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider shrink-0 text-center shadow transition-colors"
+            >
+              Call 8294407171
+            </a>
+          </div>
+
+          <div className="pt-2 flex flex-wrap gap-4">
             <button
               onClick={() => setEnquiryOpen(true)}
               className="px-6 py-3 rounded-xl bg-indigo-900 hover:bg-indigo-800 text-white font-bold text-xs uppercase shadow-md transition-colors"
@@ -197,7 +230,7 @@ export default function SchoolAdmissionsPage() {
               className="px-6 py-3 rounded-xl border border-slate-300 text-slate-800 font-semibold text-xs hover:bg-slate-50 transition-colors flex items-center gap-2"
             >
               <DownloadIcon className="w-4 h-4" />
-              <span>Download Fee Guide &amp; Prospectus</span>
+              <span>Download Official Prospectus (PDF)</span>
             </button>
           </div>
         </section>

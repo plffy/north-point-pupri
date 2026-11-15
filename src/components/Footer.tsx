@@ -1,28 +1,49 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { PhoneIcon, MailIcon, LocationMarkerIcon, WhatsAppIcon, AcademicCapIcon } from "./Icons";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
+  const { t, language } = useLanguage();
+
   return (
     <footer className="bg-slate-950 text-slate-300 border-t border-slate-800">
       {/* Top Banner / Trust Badges */}
       <div className="bg-indigo-950/80 border-b border-indigo-900/40 py-6 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-center">
           <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-            <div className="text-xl md:text-2xl font-black text-amber-400">Two Campuses</div>
-            <div className="text-xs text-slate-300 mt-1">Rajbag (Pupri) &amp; Bahera Zahidpur</div>
+            <div className="text-xl md:text-2xl font-black text-amber-400">
+              {language === "hi" ? "दो आधुनिक परिसर" : "Two Campuses"}
+            </div>
+            <div className="text-xs text-slate-300 mt-1">
+              {language === "hi" ? "राजबाग (पुपरी) एवं बहेरा जाहिदपुर" : "Rajbag (Pupri) & Bahera Zahidpur"}
+            </div>
           </div>
           <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-            <div className="text-xl md:text-2xl font-black text-emerald-400">JNVST &amp; SAV</div>
-            <div className="text-xs text-slate-300 mt-1">Proven Residential Exam Hub</div>
+            <div className="text-xl md:text-2xl font-black text-emerald-400">
+              {language === "hi" ? "नवोदय व नेतरहाट" : "JNVST & SAV"}
+            </div>
+            <div className="text-xs text-slate-300 mt-1">
+              {language === "hi" ? "आवासीय विद्यालय प्रवेश परीक्षा केंद्र" : "Proven Residential Exam Hub"}
+            </div>
           </div>
           <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-            <div className="text-xl md:text-2xl font-black text-sky-400">IIT-JEE &amp; NEET</div>
-            <div className="text-xs text-slate-300 mt-1">Structured Career Foundation</div>
+            <div className="text-xl md:text-2xl font-black text-sky-400">
+              {language === "hi" ? "IIT-JEE व NEET" : "IIT-JEE & NEET"}
+            </div>
+            <div className="text-xs text-slate-300 mt-1">
+              {language === "hi" ? "व्यवस्थित करियर फाउंडेशन बैच" : "Structured Career Foundation"}
+            </div>
           </div>
           <div className="p-3 rounded-xl bg-white/5 border border-white/5">
-            <div className="text-xl md:text-2xl font-black text-purple-400">Pupri &amp; Nanpur Bus</div>
-            <div className="text-xs text-slate-300 mt-1">Safe Transport Across 20+ Villages</div>
+            <div className="text-xl md:text-2xl font-black text-purple-400">
+              {language === "hi" ? "पुपरी व नानपुर बस" : "Pupri & Nanpur Bus"}
+            </div>
+            <div className="text-xs text-slate-300 mt-1">
+              {language === "hi" ? "20+ गांवों में सुरक्षित वाहन सेवा" : "Safe Transport Across 20+ Villages"}
+            </div>
           </div>
         </div>
       </div>
@@ -30,7 +51,7 @@ export default function Footer() {
       {/* Main Footer Columns */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          {/* Column 1: About - Full Name Always, Never Shortcut */}
+          {/* Column 1: About */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-xl bg-indigo-900 text-amber-400 flex items-center justify-center border border-amber-400/40 shrink-0">
@@ -38,15 +59,17 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-lg font-extrabold text-white tracking-tight block">
-                  North Point Children Academy
+                  {language === "hi" ? "नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी" : "North Point Children Academy"}
                 </span>
                 <span className="text-xs font-semibold text-amber-400 uppercase tracking-wider block">
-                  English Medium School with Integrated Coaching
+                  {language === "hi"
+                    ? "इंग्लिश मीडियम स्कूल एवं समेकित प्रतियोगी कोचिंग"
+                    : "English Medium School with Integrated Coaching"}
                 </span>
               </div>
             </div>
             <p className="text-xs md:text-sm text-slate-400 leading-relaxed max-w-sm">
-              Premier schooling with synchronized competitive entrance coaching for <strong>Navodaya (JNVST), Netarhat, Sainik School, IIT-JEE, and NEET</strong> across our campuses at <strong>Rajbag (Pupri)</strong> and <strong>Bahera Zahidpur (Nanpur)</strong>.
+              {t("footerAboutDesc")}
             </p>
             <div className="pt-2 flex items-center gap-3">
               <a
@@ -63,7 +86,7 @@ export default function Footer() {
                 className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium transition-colors"
               >
                 <PhoneIcon className="w-3.5 h-3.5 text-amber-400" />
-                <span>Call Us</span>
+                <span>{t("callNow")}</span>
               </a>
             </div>
           </div>
@@ -71,32 +94,32 @@ export default function Footer() {
           {/* Column 2: School Programs */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider">
-              School Academics
+              {language === "hi" ? "विद्यालय शैक्षणिक व्यवस्था" : "School Academics"}
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/school/academics" className="hover:text-amber-300 transition-colors">
-                  CBSE Curriculum &amp; Smart Classes
+                  {t("navCbseCurriculum")}
                 </Link>
               </li>
               <li>
                 <Link href="/school/beyond-classroom" className="hover:text-amber-300 transition-colors">
-                  Sports, NCC &amp; Cultural Clubs
+                  {t("navBeyondClassroom")}
                 </Link>
               </li>
               <li>
                 <Link href="/school/results" className="hover:text-amber-300 transition-colors">
-                  100% Board Pass Rate &amp; Toppers
+                  {t("navBoardResults")}
                 </Link>
               </li>
               <li>
                 <Link href="/leadership" className="hover:text-amber-300 transition-colors">
-                  Founders &amp; Leadership Desk
+                  {t("navLeadership")}
                 </Link>
               </li>
               <li>
                 <Link href="/school/admissions" className="hover:text-amber-300 transition-colors">
-                  School Admission Guidelines
+                  {t("navAdmissionProcess")}
                 </Link>
               </li>
             </ul>
@@ -105,37 +128,37 @@ export default function Footer() {
           {/* Column 3: Integrated Coaching (ISP) */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-              <span>🎯 Integrated Coaching (ISP)</span>
+              <span>🎯 {t("navCoaching")} (ISP)</span>
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/integrated-program" className="hover:text-amber-300 transition-colors font-semibold text-amber-300">
-                  What is Integrated School Program?
+                  {t("navIspOverview")}
                 </Link>
               </li>
               <li>
                 <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
-                  Navodaya (JNVST) &amp; Netarhat Wing
+                  {t("navJnvstNetarhat")}
                 </Link>
               </li>
               <li>
                 <Link href="/school/competitive-exams" className="hover:text-amber-300 transition-colors">
-                  Sainik School (AISSEE) &amp; Simultala
+                  {language === "hi" ? "सैनिक स्कूल एवं सिमुलतला तैयारी" : "Sainik School & Simultala"}
                 </Link>
               </li>
               <li>
                 <Link href="/institute/courses" className="hover:text-amber-300 transition-colors">
-                  IIT-JEE &amp; NEET Foundation
+                  {t("navJeeNeet")}
                 </Link>
               </li>
               <li>
                 <Link href="/institute/faculty" className="hover:text-amber-300 transition-colors">
-                  Synchronized Timetable &amp; Mentors
+                  {t("navMentors")}
                 </Link>
               </li>
               <li>
                 <Link href="/institute/admissions" className="hover:text-amber-300 transition-colors">
-                  SCAT Scholarship Test (Up to 100%)
+                  {t("navScat")}
                 </Link>
               </li>
             </ul>
@@ -144,19 +167,25 @@ export default function Footer() {
           {/* Column 4: Contact & Campus Info */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-amber-400 uppercase tracking-wider">
-              Both Campus Branches
+              {language === "hi" ? "दोनों परिसर शाखाएं" : "Both Campus Branches"}
             </h4>
             <div className="space-y-2.5 text-xs text-slate-400">
               <div className="flex items-start gap-2">
                 <LocationMarkerIcon className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-slate-200">Branch 1:</strong> Rajbag, Pupri, Sitamarhi, Bihar
+                  <strong className="text-slate-200">
+                    {language === "hi" ? "शाखा 1:" : "Branch 1:"}
+                  </strong>{" "}
+                  {language === "hi" ? "राजबाग, पुपरी, सीतामढ़ी, बिहार" : "Rajbag, Pupri, Sitamarhi, Bihar"}
                 </div>
               </div>
               <div className="flex items-start gap-2">
                 <LocationMarkerIcon className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-slate-200">Branch 2:</strong> Bahera Zahidpur (Nanpur), Sitamarhi, Bihar
+                  <strong className="text-slate-200">
+                    {language === "hi" ? "शाखा 2:" : "Branch 2:"}
+                  </strong>{" "}
+                  {language === "hi" ? "बहेरा जाहिदपुर (नानपुर), सीतामढ़ी, बिहार" : "Bahera Zahidpur (Nanpur), Sitamarhi, Bihar"}
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -168,7 +197,9 @@ export default function Footer() {
                 <span>admission@northpointpupri.edu.in</span>
               </div>
               <div className="pt-2 text-[11px] text-slate-500">
-                Visiting Hours: Mon – Sat (8:00 AM – 4:30 PM)
+                {language === "hi"
+                  ? "मिलने का समय: सोम – शनि (प्रातः 8:00 – अपराह्न 4:30)"
+                  : "Visiting Hours: Mon – Sat (8:00 AM – 4:30 PM)"}
               </div>
             </div>
           </div>
@@ -179,16 +210,24 @@ export default function Footer() {
       <div className="border-t border-slate-900 bg-black/60 py-4 px-4 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <div>
-            © 2025 North Point Children Academy (Public School &amp; Career Institute). All Rights Reserved.
+            {t("footerCopyright")}
           </div>
           <div className="flex items-center gap-4 text-[11px]">
-            <Link href="/about" className="hover:text-slate-300">About Campuses</Link>
+            <Link href="/about" className="hover:text-slate-300">
+              {t("navVisionCampuses")}
+            </Link>
             <span>•</span>
-            <Link href="/leadership" className="hover:text-amber-300 font-semibold">Leadership &amp; Founders</Link>
+            <Link href="/leadership" className="hover:text-amber-300 font-semibold">
+              {t("navLeadership")}
+            </Link>
             <span>•</span>
-            <Link href="/school/admissions" className="hover:text-slate-300">Admission Process</Link>
+            <Link href="/school/admissions" className="hover:text-slate-300">
+              {t("navAdmissionProcess")}
+            </Link>
             <span>•</span>
-            <Link href="/contact" className="hover:text-slate-300">Branches Map</Link>
+            <Link href="/contact" className="hover:text-slate-300">
+              {t("navContact")}
+            </Link>
           </div>
         </div>
       </div>

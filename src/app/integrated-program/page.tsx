@@ -128,7 +128,7 @@ export default function IntegratedProgramPage() {
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-rose-500 font-bold shrink-0 mt-0.5">✕</span>
-                <span><strong>Double Fees:</strong> Parents pay full school fees PLUS high private tuition / coaching fees every month.</span>
+                <span><strong>Disjointed Curriculum:</strong> School teaches one chapter while outside tuition teaches another, creating exam confusion.</span>
               </li>
             </ul>
           </div>
@@ -163,7 +163,7 @@ export default function IntegratedProgramPage() {
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="text-emerald-400 font-bold shrink-0 mt-0.5">✓</span>
-                <span><strong>Affordable All-Inclusive Fee:</strong> Everything included at a single transparent school fee, with up to 100% SCAT scholarships.</span>
+                <span><strong>Complete In-House Mentorship:</strong> School teachers and entrance mentors coordinate directly under one roof.</span>
               </li>
             </ul>
           </div>
@@ -307,11 +307,11 @@ export default function IntegratedProgramPage() {
 
                   <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
                     <h4 className="font-bold text-xs text-slate-900 flex items-center justify-between">
-                      <span>SCAT Scholarship Exam (Up to 100% Tuition Waiver)</span>
-                      <span className="text-[10px] bg-purple-100 text-purple-900 font-bold px-2 py-0.5 rounded">Financial Aid</span>
+                      <span>SCAT Diagnostic &amp; Talent Evaluation</span>
+                      <span className="text-[10px] bg-purple-100 text-purple-900 font-bold px-2 py-0.5 rounded">Aptitude Test</span>
                     </h4>
                     <p className="text-[11px] text-slate-500 mt-1">
-                      Merit-based fee concessions ensuring financial constraints never stop a hardworking student from Sitamarhi.
+                      Periodic diagnostic test assessing analytical readiness, identifying learning gaps, and recognizing high-potential students.
                     </p>
                   </div>
                 </div>

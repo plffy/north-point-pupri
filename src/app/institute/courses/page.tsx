@@ -229,8 +229,8 @@ export default function InstituteCoursesPage() {
               SCAT: Scholarship-Cum-Admission Test
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              We believe financial constraints should never stand between a meritorious student and their dream of becoming an IITian or Doctor. 
-              Appear for our periodic SCAT examination in Pupri and win up to <strong>100% scholarship</strong> on tuition fees.
+              We believe every dedicated student deserves the highest standard of guidance to pursue their dream of becoming an Engineer, Doctor, or National Scholar. 
+              Appear for our periodic SCAT diagnostic examination at our Pupri campus to evaluate your analytical aptitude and secure your seat in our specialized batches.
             </p>
             <div className="pt-2 flex flex-wrap gap-4">
               <Link

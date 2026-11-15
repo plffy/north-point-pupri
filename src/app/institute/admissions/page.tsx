@@ -24,10 +24,10 @@ export default function InstituteAdmissionsPage() {
             Enroll for Competitive Batches
           </span>
           <h1 className="text-3xl sm:text-5xl font-black">
-            Institute Admissions &amp; SCAT Scholarship
+            Institute Admissions &amp; SCAT Diagnostic
           </h1>
           <p className="text-slate-300 text-sm sm:text-base mt-2 max-w-2xl leading-relaxed">
-            Take the definitive step towards IIT-JEE, NEET-UG, and Pre-Foundation excellence with up to 100% scholarship support.
+            Take the definitive step towards IIT-JEE, NEET-UG, and Pre-Foundation excellence with specialized mentorship and diagnostic benchmarking.
           </p>
         </div>
       </section>
@@ -41,11 +41,11 @@ export default function InstituteAdmissionsPage() {
               Scholarship-Cum-Admission Test (SCAT)
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Win Up To 100% Fee Concession
+              Merit Assessment &amp; Competitive Diagnostic
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
               SCAT is designed to identify students with natural aptitude for problem-solving, science, and mathematics. 
-              Top scorers are awarded handsome fee waivers, ensuring that no deserving mind in Sitamarhi is held back due to financial constraints.
+              Top scorers earn recognition and personalized academic mentorship to accelerate their competitive journey in Navodaya, Netarhat, and JEE/NEET foundation batches.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 pt-2">
@@ -62,8 +62,8 @@ export default function InstituteAdmissionsPage() {
                 <div className="text-slate-500 mt-1">90 Minutes (60 Objective MCQs with no negative marking)</div>
               </div>
               <div className="bg-white p-4 rounded-xl border border-slate-200 text-xs">
-                <div className="font-bold text-slate-900">Registration Fee</div>
-                <div className="text-emerald-700 font-bold mt-1">FREE for Rural &amp; Local Students</div>
+                <div className="font-bold text-slate-900">Registration</div>
+                <div className="text-emerald-700 font-bold mt-1">Open via Online Enquiry or School Campus Desk</div>
               </div>
             </div>
 

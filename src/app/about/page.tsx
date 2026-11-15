@@ -67,8 +67,8 @@ export default function AboutPage() {
               <div className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-sm font-bold text-white">Affordable Excellence</h4>
-                  <p className="text-xs text-slate-300 mt-0.5">National-standard facilities at fee structures designed for Bihar families.</p>
+                  <h4 className="text-sm font-bold text-white">Dedicated Excellence</h4>
+                  <p className="text-xs text-slate-300 mt-0.5">National-standard facilities and modern learning infrastructure designed for our students.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -77,6 +77,122 @@ export default function AboutPage() {
                   <h4 className="text-sm font-bold text-white">Safe &amp; Inclusive Campus</h4>
                   <p className="text-xs text-slate-300 mt-0.5">Full CCTV monitoring, clean sanitation, dedicated school buses, and girl student safety.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Official Trust & Institutional Recognition Section with Real Campus Photo */}
+      <section className="py-12 bg-slate-900 text-white border-y border-amber-500/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Real Campus Photos Grid */}
+            <div className="lg:col-span-6 space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="rounded-2xl overflow-hidden border-2 border-amber-400/40 shadow-xl relative group bg-slate-950">
+                  <div className="h-52 sm:h-60 overflow-hidden">
+                    <img
+                      src="/images/campus/school-building-facade.jpg"
+                      alt="Multi-Story Campus Building at Pupri"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-3">
+                    <span className="text-[10px] font-bold text-amber-300 block">
+                      Multi-Story Building Facade
+                    </span>
+                    <span className="text-[10px] text-slate-300">Rajbag Campus, Pupri</span>
+                  </div>
+                </div>
+
+                <div className="rounded-2xl overflow-hidden border-2 border-emerald-400/40 shadow-xl relative group bg-slate-950">
+                  <div className="h-52 sm:h-60 overflow-hidden">
+                    <img
+                      src="/images/campus/school-entrance-signboard.jpg"
+                      alt="North Point Children Academy Entrance Signboard and Faculty at Rajbag, Pupri"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-3">
+                    <span className="text-[10px] font-bold text-emerald-300 block">
+                      Official Trust Signboard
+                    </span>
+                    <span className="text-[10px] text-slate-300">Reg: 206107720211126112700</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Trust Details & Institutional Credentials */}
+            <div className="lg:col-span-6 space-y-5">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+                  Statutory Accreditation &amp; Governance
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-2">
+                  Run by S.K. Thakur Memorial Educational Trust
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                  Established under public charitable trust guidelines to bring certified, benchmarked English medium schooling and synchronized competitive preparation to Sitamarhi district.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 block">
+                    Government Trust Reg. No.
+                  </span>
+                  <span className="text-sm font-extrabold text-white font-mono break-all mt-0.5 block">
+                    206107720211126112700
+                  </span>
+                </div>
+
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block">
+                    Curriculum Framework
+                  </span>
+                  <span className="text-sm font-extrabold text-white mt-0.5 block">
+                    CBSE Pattern • Nursery to 10th
+                  </span>
+                </div>
+
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-300 block">
+                    School Motto
+                  </span>
+                  <span className="text-sm font-extrabold text-amber-300 italic mt-0.5 block">
+                    &ldquo;Come To Learn, Go To Serve&rdquo;
+                  </span>
+                </div>
+
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-300 block">
+                    Institutional Helpline
+                  </span>
+                  <a
+                    href="tel:+918294407171"
+                    className="text-sm font-extrabold text-emerald-300 hover:text-emerald-200 mt-0.5 block"
+                  >
+                    8294407171
+                  </a>
+                </div>
+              </div>
+
+              <div className="pt-1 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/leadership"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs uppercase tracking-wider shadow transition-colors"
+                >
+                  <span>Meet Trust Leadership</span>
+                  <span>→</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-white/20 text-slate-200 hover:bg-white/10 font-semibold text-xs transition-colors"
+                >
+                  <span>Locate Campus on Map</span>
+                </Link>
               </div>
             </div>
           </div>

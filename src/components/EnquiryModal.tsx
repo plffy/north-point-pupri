@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { WhatsAppIcon, CheckCircleIcon } from "./Icons";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface EnquiryModalProps {
   isOpen: boolean;
@@ -10,6 +11,7 @@ interface EnquiryModalProps {
 }
 
 export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }: EnquiryModalProps) {
+  const { language } = useLanguage();
   const [wing, setWing] = useState<"school" | "institute">(defaultWing);
   const [formData, setFormData] = useState({
     studentName: "",
@@ -47,7 +49,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 animate-fade-in">
-      <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 relative animate-fade-in-up">
+      <div className="bg-white rounded-2xl max-w-lg w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-200 relative animate-fade-in-up">
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-900 to-indigo-900 text-white p-5 relative">
           <button
@@ -58,11 +60,15 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
             ✕
           </button>
           <div className="text-xs uppercase tracking-wider font-semibold text-amber-400 mb-1">
-            Admissions &amp; Counseling Desk
+            {language === "hi" ? "नामांकन एवं परामर्श डेस्क" : "Admissions & Counseling Desk"}
           </div>
-          <h3 className="text-xl font-bold">North Point Children Academy</h3>
+          <h3 className="text-xl font-bold">
+            {language === "hi" ? "नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी" : "North Point Children Academy"}
+          </h3>
           <p className="text-xs text-slate-300 mt-1">
-            Branches: Rajbag (Pupri) &amp; Bahera Zahidpur | Call: 8294407171
+            {language === "hi"
+              ? "शाखाएं: राजबाग (पुपरी) एवं बहेरा जाहिदपुर | हेल्पलाइन: 8294407171"
+              : "Branches: Rajbag (Pupri) & Bahera Zahidpur | Call: 8294407171"}
           </p>
 
           {/* Division Toggle inside modal */}
@@ -79,7 +85,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                   : "text-slate-200 hover:text-white"
               }`}
             >
-              🏫 School Admission
+              🏫 {language === "hi" ? "विद्यालय नामांकन" : "School Admission"}
             </button>
             <button
               type="button"
@@ -93,7 +99,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                   : "text-slate-200 hover:text-white"
               }`}
             >
-              🎯 Integrated Coaching (ISP)
+              🎯 {language === "hi" ? "समेकित कोचिंग (ISP)" : "Integrated Coaching (ISP)"}
             </button>
           </div>
         </div>
@@ -244,7 +250,7 @@ export default function EnquiryModal({ isOpen, onClose, defaultWing = "school" }
                 </label>
                 <textarea
                   rows={2}
-                  placeholder="Your village name, need school bus route, hostel query, fee enquiry, etc."
+                  placeholder="Your village or locality, school bus route requirement, or specific admission questions..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-3 py-2 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"

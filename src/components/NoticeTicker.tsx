@@ -2,48 +2,42 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-
-interface Notice {
-  id: string;
-  badge: string;
-  badgeColor: string;
-  text: string;
-  link?: string;
-}
-
-const NOTICES: Notice[] = [
-  {
-    id: "1",
-    badge: "Admissions 2025-26",
-    badgeColor: "bg-red-500",
-    text: "North Point Children Academy: Admissions open at both Rajbag (Pupri) & Bahera Zahidpur branches! Call 8294407171.",
-    link: "/school/admissions",
-  },
-  {
-    id: "2",
-    badge: "JNVST & Netarhat",
-    badgeColor: "bg-amber-500",
-    text: "Special Intensive Batch for Navodaya (JNVST) & Netarhat Awasiya Vidyalaya entrance examinations starting soon.",
-    link: "/school/competitive-exams",
-  },
-  {
-    id: "3",
-    badge: "SCAT 2025",
-    badgeColor: "bg-emerald-600",
-    text: "North Point Scholarship-Cum-Admission Test (SCAT) for IIT-JEE / NEET foundation with up to 100% scholarship.",
-    link: "/institute/admissions",
-  },
-  {
-    id: "4",
-    badge: "Olympiad Wing",
-    badgeColor: "bg-blue-600",
-    text: "Special weekend masterclasses for SOF (NSO, IMO) & National Means-cum-Merit Scholarship (NMMS).",
-    link: "/school/competitive-exams",
-  },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function NoticeTicker() {
   const [isPaused, setIsPaused] = useState(false);
+  const { t, language } = useLanguage();
+
+  const notices = [
+    {
+      id: "1",
+      badge: language === "hi" ? "नामांकन 2025–26" : "Admissions 2025-26",
+      badgeColor: "bg-red-500",
+      text: t("notice1"),
+      link: "/school/admissions",
+    },
+    {
+      id: "2",
+      badge: language === "hi" ? "नवोदय व नेतरहाट" : "JNVST & Netarhat",
+      badgeColor: "bg-amber-500",
+      text: t("notice2"),
+      link: "/school/competitive-exams",
+    },
+    {
+      id: "3",
+      badge: language === "hi" ? "स्कैट (SCAT) 2025" : "SCAT 2025",
+      badgeColor: "bg-emerald-600",
+      text: t("notice3"),
+      link: "/institute/admissions",
+    },
+    {
+      id: "4",
+      badge: language === "hi" ? "ओलंपियाड सेल" : "Olympiad Wing",
+      badgeColor: "bg-blue-600",
+      text: t("notice4"),
+      link: "/school/competitive-exams",
+    },
+  ];
 
   return (
     <div className="bg-[#0c1a30] text-white text-xs md:text-sm border-b border-amber-500/30 relative overflow-hidden py-2 px-3 z-30 shadow-sm">
@@ -51,7 +45,7 @@ export default function NoticeTicker() {
         {/* Urgent Label */}
         <div className="flex items-center gap-1.5 shrink-0 bg-red-600 text-white font-bold uppercase tracking-wider text-[10px] md:text-xs px-2.5 py-0.5 rounded shadow-sm animate-pulse">
           <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
-          Latest Circulars
+          <span>{t("latestCirculars")}</span>
         </div>
 
         {/* Scrolling notices container */}
@@ -64,7 +58,7 @@ export default function NoticeTicker() {
             className="inline-flex items-center gap-8 animate-marquee"
             style={{ animationPlayState: isPaused ? "paused" : "running" }}
           >
-            {NOTICES.concat(NOTICES).map((item, idx) => (
+            {notices.concat(notices).map((item, idx) => (
               <span key={`${item.id}-${idx}`} className="inline-flex items-center gap-2 text-slate-200">
                 <span
                   className={`${item.badgeColor} text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded text-white`}
@@ -88,22 +82,7 @@ export default function NoticeTicker() {
           </div>
         </div>
 
-        {/* Quick action buttons */}
-        <div className="hidden lg:flex items-center gap-2 shrink-0">
-          <Link
-            href="/contact"
-            className="text-[11px] font-medium text-amber-300 hover:text-amber-200 underline decoration-amber-400/50"
-          >
-            Rajbag, Pupri / Bahera Zahidpur
-          </Link>
-          <span className="text-slate-600">|</span>
-          <a
-            href="tel:+918294407171"
-            className="text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 px-2 py-0.5 rounded border border-emerald-500/30 transition-colors"
-          >
-            Helpline: 8294407171
-          </a>
-        </div>
+        {/* Direct Branch Tag */}
       </div>
     </div>
   );
