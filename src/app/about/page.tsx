@@ -128,54 +128,63 @@ export default function AboutPage() {
             <div className="lg:col-span-6 space-y-5">
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
-                  Statutory Accreditation &amp; Governance
+                  Government Recognition &amp; Statutory Affiliation
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-2">
-                  Run by S.K. Thakur Memorial Educational Trust
+                  Recognized by Government of Bihar
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-                  Established under public charitable trust guidelines to bring certified, benchmarked English medium schooling and synchronized competitive preparation to Sitamarhi district.
+                  Run by S.K. Thakur Memorial Educational Trust, North Point Children Academy operates with official recognition from the Department of Education, Government of Bihar, strictly adhering to RTE guidelines, CBSE curricular benchmarks, and child welfare standards.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 block">
-                    Government Trust Reg. No.
+                    UDISE+ National School Code
                   </span>
-                  <span className="text-sm font-extrabold text-white font-mono break-all mt-0.5 block">
-                    206107720211126112700
+                  <span className="text-base font-extrabold text-amber-300 font-mono tracking-wider mt-0.5 block">
+                    10041501717
+                  </span>
+                  <span className="text-[10px] text-slate-400 mt-1 block">
+                    Ministry of Education, Govt. of India / Govt. of Bihar
                   </span>
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block">
-                    Curriculum Framework
+                    Affiliation &amp; Recognition
                   </span>
                   <span className="text-sm font-extrabold text-white mt-0.5 block">
-                    CBSE Pattern • Nursery to 10th
+                    Govt. of Bihar (Education Dept.)
+                  </span>
+                  <span className="text-[10px] text-slate-400 mt-1 block">
+                    Pvt. Unaided Recognized • Est. 2007 (Rec. 2015)
                   </span>
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-300 block">
-                    School Motto
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-sky-400 block">
+                    Registered Educational Trust
                   </span>
-                  <span className="text-sm font-extrabold text-amber-300 italic mt-0.5 block">
-                    &ldquo;Come To Learn, Go To Serve&rdquo;
+                  <span className="text-sm font-extrabold text-white mt-0.5 block">
+                    S.K. Thakur Memorial Trust
+                  </span>
+                  <span className="text-[10px] text-slate-400 font-mono mt-1 block">
+                    Reg. No: 206107720211126112700
                   </span>
                 </div>
 
                 <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-300 block">
-                    Institutional Helpline
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-purple-400 block">
+                    Curricular Standards &amp; RTE
                   </span>
-                  <a
-                    href="tel:+918294407171"
-                    className="text-sm font-extrabold text-emerald-300 hover:text-emerald-200 mt-0.5 block"
-                  >
-                    8294407171
-                  </a>
+                  <span className="text-sm font-extrabold text-white mt-0.5 block">
+                    CBSE Pattern • RTE Sec 12 Compliant
+                  </span>
+                  <span className="text-[10px] text-slate-400 mt-1 block">
+                    Pre-Primary to 8th / 10th with Integrated ISP
+                  </span>
                 </div>
               </div>
 

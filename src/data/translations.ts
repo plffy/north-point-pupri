@@ -207,7 +207,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     heroCtaProspectus: "Prospectus PDF",
     branch1Pill: "Branch 1: Rajbag, Pupri, Sitamarhi",
     branch2Pill: "Branch 2: Bahera Zahidpur, Nanpur",
-    badgeCbse: "CBSE Pattern Curriculum",
+    badgeCbse: "Govt. of Bihar Recognized • CBSE Pattern (UDISE: 10041501717)",
     badgeJnvst: "JNVST / Netarhat Coaching",
     badgeJeeNeet: "IIT-JEE & NEET Foundation",
     badgeTransport: "Safe Bus Transport (Pupri & Nanpur)",
@@ -284,12 +284,12 @@ export const translations: Record<Language, TranslationDictionary> = {
     ctaBannerWhatsapp: "WhatsApp: 8294407171",
 
     footerAboutDesc:
-      "Premier schooling with synchronized competitive entrance coaching for Navodaya (JNVST), Netarhat, Sainik School, IIT-JEE, and NEET across our campuses at Rajbag (Pupri) and Bahera Zahidpur (Nanpur).",
+      "A premier educational institution recognized by the Government of Bihar (UDISE: 10041501717) and run by S.K. Thakur Memorial Educational Trust. Offering CBSE-aligned education and synchronized competitive entrance coaching across Rajbag (Pupri) and Bahera Zahidpur (Nanpur) campuses.",
     footerCampusesHeading: "Our Campuses",
     footerQuickLinksHeading: "Quick Links",
     footerProgramsHeading: "Academic Programs",
     footerContactHeading: "Helpline & Contact",
-    footerCopyright: "© 2025–26 North Point Children Academy. All rights reserved. S.K. Thakur Memorial Educational Trust.",
+    footerCopyright: "© 2025–26 North Point Children Academy (Govt. of Bihar Recognized • UDISE: 10041501717). S.K. Thakur Memorial Educational Trust. All rights reserved.",
 
     notice1: "North Point Children Academy: Admissions open at both Rajbag (Pupri) & Bahera Zahidpur branches! Call 8294407171.",
     notice2: "Special Intensive Batch for Navodaya (JNVST) & Netarhat Awasiya Vidyalaya entrance examinations starting soon.",
@@ -352,7 +352,7 @@ export const translations: Record<Language, TranslationDictionary> = {
     heroCtaProspectus: "प्रॉस्पेक्टस (PDF)",
     branch1Pill: "शाखा 1: राजबाग, पुपरी, सीतामढ़ी",
     branch2Pill: "शाखा 2: बहेरा जाहिदपुर, नानपुर",
-    badgeCbse: "सीबीएसई पैटर्न पाठ्यक्रम",
+    badgeCbse: "बिहार सरकार से मान्यता प्राप्त • CBSE पैटर्न (UDISE: 10041501717)",
     badgeJnvst: "नवोदय / नेतरहाट विशेष बैच",
     badgeJeeNeet: "IIT-JEE व NEET फाउंडेशन",
     badgeTransport: "सुरक्षित बस व वैन सेवा (पुपरी व नानपुर)",
@@ -429,12 +429,12 @@ export const translations: Record<Language, TranslationDictionary> = {
     ctaBannerWhatsapp: "व्हाट्सएप: 8294407171",
 
     footerAboutDesc:
-      "सीतामढ़ी में गुणवत्तापूर्ण विद्यालयी शिक्षा एवं नवोदय, नेतरहाट, सैनिक स्कूल, IIT-JEE व NEET की समेकित प्रतियोगी कोचिंग का विश्वसनीय केंद्र। शाखाएं: राजबाग (पुपरी) व बहेरा जाहिदपुर (नानपुर)।",
+      "बिहार सरकार (शिक्षा विभाग) द्वारा मान्यता प्राप्त (यू-डायस कोड: 10041501717) एवं एस.के. ठाकुर मेमोरियल ट्रस्ट द्वारा संचालित प्रतिष्ठित संस्थान। राजबाग (पुपरी) व बहेरा जाहिदपुर (नानपुर) परिसरों में गुणवत्तापूर्ण सीबीएसई स्कूली शिक्षा एवं प्रतियोगी कोचिंग।",
     footerCampusesHeading: "हमारे परिसर",
     footerQuickLinksHeading: "महत्वपूर्ण लिंक",
     footerProgramsHeading: "शैक्षणिक कार्यक्रम",
     footerContactHeading: "हेल्पलाइन एवं संपर्क",
-    footerCopyright: "© 2025–26 नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी। सर्वाधिकार सुरक्षित। एस.के. ठाकुर मेमोरियल एजुकेशनल ट्रस्ट।",
+    footerCopyright: "© 2025–26 नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी (बिहार सरकार मान्यता प्राप्त • यू-डायस: 10041501717) • एस.के. ठाकुर मेमोरियल ट्रस्ट। सर्वाधिकार सुरक्षित।",
 
     notice1: "नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी: राजबाग (पुपरी) एवं बहेरा जाहिदपुर दोनों शाखाओं में नामांकन जारी है! हेल्पलाइन: 8294407171.",
     notice2: "जवाहर नवोदय विद्यालय (JNVST) एवं नेतरहाट आवासीय विद्यालय प्रवेश परीक्षा हेतु विशेष सघन बैच शीघ्र प्रारंभ।",

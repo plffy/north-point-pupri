@@ -27,11 +27,11 @@ const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "1",
     category: "campus",
-    title: "Official Campus Entrance & Trust Signboard",
-    desc: "S.K. Thakur Memorial Educational Trust registration, Gov. affiliation, faculty, leadership and Eco Club students at Rajbag.",
+    title: "Official Campus Entrance & Government Recognition Board",
+    desc: "S.K. Thakur Memorial Educational Trust, Govt. of Bihar recognition (UDISE: 10041501717), faculty, leadership and Eco Club students at Rajbag.",
     image: "/images/campus/school-entrance-signboard.jpg",
     icon: "🏫",
-    badge: "Trust Signboard",
+    badge: "Govt. Recognized • UDISE",
   },
   {
     id: "2",

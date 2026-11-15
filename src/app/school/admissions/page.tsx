@@ -149,6 +149,33 @@ export default function SchoolAdmissionsPage() {
                 <span className="text-slate-500">If applying under reserved or merit scholarship categories</span>
               </div>
             </div>
+
+            <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-slate-200 text-xs">
+              <CheckCircleIcon className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+              <div>
+                <span className="font-bold text-slate-900 block">RTE Act Quota (Section 12.1.c)</span>
+                <span className="text-slate-500">25% quota for disadvantaged groups as per Govt. of Bihar norms</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Statutory Government Recognition & RTE Compliance Notice */}
+          <div className="mt-6 p-4 rounded-2xl bg-indigo-900/5 border border-indigo-900/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div className="space-y-0.5">
+              <span className="font-bold text-indigo-950 flex items-center gap-1.5">
+                <span>🏛️</span>
+                <span>Statutory Government Recognition (UDISE: 10041501717)</span>
+              </span>
+              <p className="text-slate-600">
+                North Point Children Academy is recognized by the Department of Education, Government of Bihar, strictly adhering to RTE Act standards and CBSE curricular framework.
+              </p>
+            </div>
+            <Link
+              href="/about"
+              className="text-xs font-bold text-indigo-900 hover:text-indigo-700 underline shrink-0"
+            >
+              View Affiliation Details →
+            </Link>
           </div>
         </section>
 

@@ -71,6 +71,17 @@ export default function Footer() {
             <p className="text-xs md:text-sm text-slate-400 leading-relaxed max-w-sm">
               {t("footerAboutDesc")}
             </p>
+            <div className="flex flex-wrap gap-1.5 pt-1 text-[11px]">
+              <span className="px-2.5 py-0.5 rounded-md bg-amber-400/10 border border-amber-400/20 text-amber-300 font-semibold">
+                {language === "hi" ? "मान्यता: बिहार सरकार" : "Govt. of Bihar Recognized"}
+              </span>
+              <span className="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-slate-300 font-mono">
+                UDISE: 10041501717
+              </span>
+              <span className="px-2.5 py-0.5 rounded-md bg-white/5 border border-white/10 text-slate-300">
+                {language === "hi" ? "सीबीएसई पैटर्न" : "CBSE Pattern"}
+              </span>
+            </div>
             <div className="pt-2 flex items-center gap-3">
               <a
                 href="https://wa.me/918294407171"

@@ -59,18 +59,18 @@ const HOME_PHOTO_ITEMS: HomePhotoItem[] = [
   {
     id: "entrance",
     category: "campus",
-    badgeEn: "Official Trust",
-    badgeHi: "शासकीय मान्यता प्राप्त",
-    badgeColor: "bg-emerald-500 text-white",
-    topRightTag: "Reg: 206107720211126112700",
+    badgeEn: "Bihar Govt. Recognized",
+    badgeHi: "बिहार सरकार मान्यता प्राप्त",
+    badgeColor: "bg-emerald-600 text-white",
+    topRightTag: "UDISE: 10041501717",
     image: "/images/campus/school-entrance-signboard.jpg",
-    titleEn: "Official Entrance & Trust Accreditation",
-    titleHi: "मुख्य प्रवेश द्वार एवं एस.के. ठाकुर मेमोरियल ट्रस्ट बोर्ड",
-    descEn: "Run by S.K. Thakur Memorial Educational Trust, affiliated to Govt., CBSE pattern, highlighting our leadership team and student Eco Club.",
-    descHi: "एस.के. ठाकुर मेमोरियल एजुकेशनल ट्रस्ट द्वारा संचालित, शासकीय मान्यता प्राप्त, सीबीएसई पैटर्न एवं पर्यावरण क्लब से युक्त।",
-    tagEn: "Government Affiliated",
-    tagHi: "ट्रस्ट एवं मान्यता",
-    alt: "North Point Children Academy Official Campus Entrance & Signboard",
+    titleEn: "Official Campus Entrance & Government Recognition",
+    titleHi: "मुख्य प्रवेश द्वार एवं शासकीय मान्यता बोर्ड",
+    descEn: "Recognized by Department of Education, Government of Bihar (UDISE Code: 10041501717) and run by S.K. Thakur Memorial Educational Trust under CBSE pattern.",
+    descHi: "बिहार सरकार (शिक्षा विभाग) द्वारा विधिवत मान्यता प्राप्त (यू-डायस कोड: 10041501717), एस.के. ठाकुर मेमोरियल ट्रस्ट द्वारा संचालित एवं सीबीएसई पैटर्न।",
+    tagEn: "Govt. Recognized • UDISE: 10041501717",
+    tagHi: "बिहार सरकार मान्यता • यू-डायस: 10041501717",
+    alt: "North Point Children Academy Bihar Government Recognized Campus Entrance & Signboard",
   },
   {
     id: "trophy",
@@ -273,7 +273,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
                   <div className="absolute bottom-3 left-3 right-3 text-left">
                     <span className="text-[10px] bg-emerald-500 text-white font-black px-2 py-0.5 rounded uppercase tracking-wider">
-                      {language === "hi" ? "ट्रस्ट एवं शासकीय मान्यता" : "Trust & Affiliation"}
+                      {language === "hi" ? "बिहार सरकार मान्यता • UDISE: 10041501717" : "Govt. of Bihar Recognized • UDISE: 10041501717"}
                     </span>
                     <h3 className="text-sm font-bold text-white mt-1">
                       S.K. Thakur Memorial Educational Trust

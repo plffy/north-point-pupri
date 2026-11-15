@@ -84,7 +84,7 @@ export default function Header() {
                   {language === "hi" ? "नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी" : "North Point Children Academy"}
                 </span>
                 <span className="text-[10px] xl:text-[11px] font-semibold text-indigo-800 tracking-tight whitespace-nowrap">
-                  {language === "hi" ? "राजबाग, पुपरी • बहेरा जाहिदपुर" : "Rajbag, Pupri • Bahera Zahidpur"}
+                  {language === "hi" ? "बिहार सरकार मान्यता • UDISE: 10041501717" : "Govt. Recognized • UDISE: 10041501717"}
                 </span>
               </div>
             </Link>
@@ -373,8 +373,11 @@ export default function Header() {
               <div className="font-bold text-slate-900">
                 {language === "hi" ? "नॉर्थ प्वाइंट चिल्ड्रेन एकेडमी" : "North Point Children Academy"}
               </div>
+              <div className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200/60 rounded px-2 py-0.5 inline-block">
+                {language === "hi" ? "बिहार सरकार मान्यता प्राप्त • यू-डायस: 10041501717" : "Govt. of Bihar Recognized • UDISE: 10041501717"}
+              </div>
               <div className="text-slate-600">
-                {language === "hi" ? "इंग्लिश मीडियम स्कूल एवं समेकित कोचिंग" : "English Medium School with Integrated Coaching"}
+                {language === "hi" ? "इंग्लिश मीडियम स्कूल एवं समेकित कोचिंग (सीबीएसई पैटर्न)" : "English Medium School with Integrated Coaching (CBSE Pattern)"}
               </div>
               <div className="text-slate-500">
                 {language === "hi" ? "राजबाग (पुपरी) एवं बहेरा जाहिदपुर (नानपुर)" : "Rajbag (Pupri) & Bahera Zahidpur (Nanpur)"}

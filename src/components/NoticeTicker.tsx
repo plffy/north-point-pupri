@@ -17,6 +17,16 @@ export default function NoticeTicker() {
       link: "/school/admissions",
     },
     {
+      id: "govt",
+      badge: language === "hi" ? "शासकीय मान्यता" : "Govt. Recognized",
+      badgeColor: "bg-emerald-600",
+      text:
+        language === "hi"
+          ? "बिहार सरकार (शिक्षा विभाग) द्वारा मान्यता प्राप्त • यू-डायस कोड: 10041501717 • सीबीएसई पैटर्न"
+          : "Recognized by Govt. of Bihar (Education Dept.) • UDISE Code: 10041501717 • CBSE Pattern",
+      link: "/about",
+    },
+    {
       id: "2",
       badge: language === "hi" ? "नवोदय व नेतरहाट" : "JNVST & Netarhat",
       badgeColor: "bg-amber-500",

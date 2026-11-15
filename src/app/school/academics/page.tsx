@@ -28,6 +28,44 @@ export default function AcademicsPage() {
         </div>
       </section>
 
+      {/* Statutory Recognition & Curriculum Credentials */}
+      <section className="bg-slate-50 border-b border-slate-200 py-6 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0">
+              🏛️
+            </div>
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">Government Recognition</span>
+              <span className="text-xs font-bold text-slate-900 block">Recognized by Govt. of Bihar</span>
+              <span className="text-[11px] text-slate-500">Education Dept. • Pvt. Unaided Recognized</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-900 flex items-center justify-center font-bold text-lg shrink-0">
+              📋
+            </div>
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">National School Code</span>
+              <span className="text-xs font-bold text-slate-900 font-mono block">UDISE+ Code: 10041501717</span>
+              <span className="text-[11px] text-slate-500">Ministry of Education, Govt. of India</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-900 flex items-center justify-center font-bold text-lg shrink-0">
+              📚
+            </div>
+            <div>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">Curricular Framework</span>
+              <span className="text-xs font-bold text-slate-900 block">CBSE Pattern &amp; NEP 2020</span>
+              <span className="text-[11px] text-slate-500">S.K. Thakur Memorial Educational Trust</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stages of Learning */}
       <section className="py-14 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 space-y-12">
         <div className="text-center max-w-2xl mx-auto">
